@@ -1,0 +1,5996 @@
+{
+  "source": "data/raw/arabesque-by-friedrich-burgmuller-op-100-transkribtion.mxl",
+  "num_notes": 353,
+  "num_events": 234,
+  "events": [
+    {
+      "onset": 0.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 0.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 1,
+          "part_idx": 1,
+          "note_id": "p1_o0.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 0.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 1,
+          "part_idx": 1,
+          "note_id": "p1_o0.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 0.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 0.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 1,
+          "part_idx": 1,
+          "note_id": "p1_o0.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 1.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 1.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 1,
+          "part_idx": 1,
+          "note_id": "p1_o1.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 1.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 1,
+          "part_idx": 1,
+          "note_id": "p1_o1.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 1.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 1.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 1,
+          "part_idx": 1,
+          "note_id": "p1_o1.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 2.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 2.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 2,
+          "part_idx": 1,
+          "note_id": "p1_o2.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 2.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 2,
+          "part_idx": 1,
+          "note_id": "p1_o2.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 2.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 2.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 2,
+          "part_idx": 1,
+          "note_id": "p1_o2.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 3.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 3.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 2,
+          "part_idx": 1,
+          "note_id": "p1_o3.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 3.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 2,
+          "part_idx": 1,
+          "note_id": "p1_o3.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 3.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 3.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 2,
+          "part_idx": 1,
+          "note_id": "p1_o3.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 4.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 4.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 1,
+          "note_id": "p1_o4.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 4.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 1,
+          "note_id": "p1_o4.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 4.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 0,
+          "note_id": "p0_o4.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 4.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 4.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 1,
+          "note_id": "p1_o4.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 4.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 4.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 0,
+          "note_id": "p0_o4.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 4.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 4.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 0,
+          "note_id": "p0_o4.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 4.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 4.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 0,
+          "note_id": "p0_o4.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 5.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 5.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 1,
+          "note_id": "p1_o5.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 5.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 1,
+          "note_id": "p1_o5.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 5.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 0,
+          "note_id": "p0_o5.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 5.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 5.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 3,
+          "part_idx": 1,
+          "note_id": "p1_o5.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 6.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 6.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 1,
+          "note_id": "p1_o6.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 6.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 1,
+          "note_id": "p1_o6.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 6.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 0,
+          "note_id": "p0_o6.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 6.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 6.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 1,
+          "note_id": "p1_o6.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 6.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 6.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 0,
+          "note_id": "p0_o6.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 6.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 6.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 0,
+          "note_id": "p0_o6.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 6.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 74,
+          "onset": 6.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 0,
+          "note_id": "p0_o6.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 7.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 7.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 1,
+          "note_id": "p1_o7.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 7.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 1,
+          "note_id": "p1_o7.0_c2"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 7.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 0,
+          "note_id": "p0_o7.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 7.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 7.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 4,
+          "part_idx": 1,
+          "note_id": "p1_o7.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 8.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 8.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 1,
+          "note_id": "p1_o8.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 8.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 1,
+          "note_id": "p1_o8.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 8.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 0,
+          "note_id": "p0_o8.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 8.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 8.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 1,
+          "note_id": "p1_o8.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 8.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 8.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 0,
+          "note_id": "p0_o8.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 8.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 77,
+          "onset": 8.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 0,
+          "note_id": "p0_o8.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 8.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        79
+      ],
+      "notes": [
+        {
+          "pitch_midi": 79,
+          "onset": 8.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 0,
+          "note_id": "p0_o8.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 9.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 9.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 1,
+          "note_id": "p1_o9.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 9.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 1,
+          "note_id": "p1_o9.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 9.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 0,
+          "note_id": "p0_o9.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 9.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 9.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 5,
+          "part_idx": 1,
+          "note_id": "p1_o9.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 10.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 10.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 1,
+          "note_id": "p1_o10.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 10.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 1,
+          "note_id": "p1_o10.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 10.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 0,
+          "note_id": "p0_o10.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 10.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 10.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 1,
+          "note_id": "p1_o10.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 10.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        83
+      ],
+      "notes": [
+        {
+          "pitch_midi": 83,
+          "onset": 10.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 0,
+          "note_id": "p0_o10.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 10.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        84
+      ],
+      "notes": [
+        {
+          "pitch_midi": 84,
+          "onset": 10.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 0,
+          "note_id": "p0_o10.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 10.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        86
+      ],
+      "notes": [
+        {
+          "pitch_midi": 86,
+          "onset": 10.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 0,
+          "note_id": "p0_o10.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 11.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        88
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 11.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 1,
+          "note_id": "p1_o11.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 11.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 1,
+          "note_id": "p1_o11.0_c2"
+        },
+        {
+          "pitch_midi": 88,
+          "onset": 11.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 0,
+          "note_id": "p0_o11.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 11.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 11.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 6,
+          "part_idx": 1,
+          "note_id": "p1_o11.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 12.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 12.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 1,
+          "note_id": "p1_o12.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 12.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 1,
+          "note_id": "p1_o12.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 12.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        55
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 12.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 1,
+          "note_id": "p1_o12.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 12.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 12.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 0,
+          "note_id": "p0_o12.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 13.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 13.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 1,
+          "note_id": "p1_o13.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 13.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 1,
+          "note_id": "p1_o13.0_c2"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 13.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 0,
+          "note_id": "p0_o13.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 13.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        55
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 13.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 1,
+          "note_id": "p1_o13.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 13.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 77,
+          "onset": 13.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 7,
+          "part_idx": 0,
+          "note_id": "p0_o13.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 14.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 14.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 1,
+          "note_id": "p1_o14.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 14.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 0,
+          "note_id": "p0_o14.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 14.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 14.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 1,
+          "note_id": "p1_o14.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 14.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 1,
+          "note_id": "p1_o14.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 15.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 15.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 1,
+          "note_id": "p1_o15.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 15.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 0,
+          "note_id": "p0_o15.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 15.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 15.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 1,
+          "note_id": "p1_o15.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 15.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 8,
+          "part_idx": 1,
+          "note_id": "p1_o15.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 16.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        65
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 16.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 1,
+          "note_id": "p1_o16.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 16.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 16.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 1,
+          "note_id": "p1_o16.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 16.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 1,
+          "note_id": "p1_o16.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 16.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        79
+      ],
+      "notes": [
+        {
+          "pitch_midi": 79,
+          "onset": 16.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 0,
+          "note_id": "p0_o16.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 17.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 17.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 1,
+          "note_id": "p1_o17.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 17.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 0,
+          "note_id": "p0_o17.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 17.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 17.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 1,
+          "note_id": "p1_o17.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 17.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 1,
+          "note_id": "p1_o17.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 17.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 17.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 9,
+          "part_idx": 0,
+          "note_id": "p0_o17.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 18.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 18.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 10,
+          "part_idx": 1,
+          "note_id": "p1_o18.0_c0"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 18.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 10,
+          "part_idx": 1,
+          "note_id": "p1_o18.0_c1"
+        },
+        {
+          "pitch_midi": 72,
+          "onset": 18.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 10,
+          "part_idx": 0,
+          "note_id": "p0_o18.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 19.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 19.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 10,
+          "part_idx": 1,
+          "note_id": "p1_o19.0_n"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 19.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 10,
+          "part_idx": 0,
+          "note_id": "p0_o19.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 20.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 20.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 1,
+          "note_id": "p1_o20.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 20.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 1,
+          "note_id": "p1_o20.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 20.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 0,
+          "note_id": "p0_o20.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 20.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 20.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 1,
+          "note_id": "p1_o20.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 20.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 20.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 0,
+          "note_id": "p0_o20.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 20.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 20.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 0,
+          "note_id": "p0_o20.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 20.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 20.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 0,
+          "note_id": "p0_o20.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 21.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 21.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 1,
+          "note_id": "p1_o21.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 21.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 1,
+          "note_id": "p1_o21.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 21.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 0,
+          "note_id": "p0_o21.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 21.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 21.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 11,
+          "part_idx": 1,
+          "note_id": "p1_o21.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 22.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 22.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 1,
+          "note_id": "p1_o22.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 22.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 1,
+          "note_id": "p1_o22.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 22.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 0,
+          "note_id": "p0_o22.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 22.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 22.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 1,
+          "note_id": "p1_o22.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 22.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 22.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 0,
+          "note_id": "p0_o22.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 22.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 22.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 0,
+          "note_id": "p0_o22.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 22.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 74,
+          "onset": 22.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 0,
+          "note_id": "p0_o22.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 23.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 23.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 1,
+          "note_id": "p1_o23.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 23.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 1,
+          "note_id": "p1_o23.0_c2"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 23.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 0,
+          "note_id": "p0_o23.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 23.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 23.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 12,
+          "part_idx": 1,
+          "note_id": "p1_o23.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 24.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 24.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 1,
+          "note_id": "p1_o24.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 24.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 1,
+          "note_id": "p1_o24.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 24.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 0,
+          "note_id": "p0_o24.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 24.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 24.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 1,
+          "note_id": "p1_o24.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 24.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 24.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 0,
+          "note_id": "p0_o24.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 24.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 77,
+          "onset": 24.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 0,
+          "note_id": "p0_o24.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 24.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        79
+      ],
+      "notes": [
+        {
+          "pitch_midi": 79,
+          "onset": 24.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 0,
+          "note_id": "p0_o24.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 25.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 25.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 1,
+          "note_id": "p1_o25.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 25.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 1,
+          "note_id": "p1_o25.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 25.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 0,
+          "note_id": "p0_o25.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 25.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 25.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 13,
+          "part_idx": 1,
+          "note_id": "p1_o25.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 26.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 26.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 1,
+          "note_id": "p1_o26.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 26.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 1,
+          "note_id": "p1_o26.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 26.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 0,
+          "note_id": "p0_o26.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 26.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 26.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 1,
+          "note_id": "p1_o26.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 26.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        83
+      ],
+      "notes": [
+        {
+          "pitch_midi": 83,
+          "onset": 26.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 0,
+          "note_id": "p0_o26.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 26.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        84
+      ],
+      "notes": [
+        {
+          "pitch_midi": 84,
+          "onset": 26.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 0,
+          "note_id": "p0_o26.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 26.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        86
+      ],
+      "notes": [
+        {
+          "pitch_midi": 86,
+          "onset": 26.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 0,
+          "note_id": "p0_o26.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 27.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        88
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 27.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 1,
+          "note_id": "p1_o27.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 27.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 1,
+          "note_id": "p1_o27.0_c2"
+        },
+        {
+          "pitch_midi": 88,
+          "onset": 27.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 0,
+          "note_id": "p0_o27.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 27.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 27.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 14,
+          "part_idx": 1,
+          "note_id": "p1_o27.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 28.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 28.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 1,
+          "note_id": "p1_o28.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 28.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 1,
+          "note_id": "p1_o28.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 28.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        55
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 28.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 1,
+          "note_id": "p1_o28.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 28.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 28.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 0,
+          "note_id": "p0_o28.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 29.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 29.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 1,
+          "note_id": "p1_o29.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 29.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 1,
+          "note_id": "p1_o29.0_c2"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 29.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 0,
+          "note_id": "p0_o29.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 29.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        55
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 29.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 1,
+          "note_id": "p1_o29.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 29.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 77,
+          "onset": 29.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 15,
+          "part_idx": 0,
+          "note_id": "p0_o29.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 30.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 30.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 1,
+          "note_id": "p1_o30.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 30.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 0,
+          "note_id": "p0_o30.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 30.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 30.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 1,
+          "note_id": "p1_o30.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 30.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 1,
+          "note_id": "p1_o30.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 31.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 31.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 1,
+          "note_id": "p1_o31.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 31.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 0,
+          "note_id": "p0_o31.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 31.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 31.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 1,
+          "note_id": "p1_o31.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 31.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 16,
+          "part_idx": 1,
+          "note_id": "p1_o31.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 32.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        65
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 32.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 1,
+          "note_id": "p1_o32.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 32.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 32.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 1,
+          "note_id": "p1_o32.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 32.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 1,
+          "note_id": "p1_o32.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 32.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        79
+      ],
+      "notes": [
+        {
+          "pitch_midi": 79,
+          "onset": 32.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 0,
+          "note_id": "p0_o32.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 33.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 33.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 1,
+          "note_id": "p1_o33.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 33.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 0,
+          "note_id": "p0_o33.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 33.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        55,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 55,
+          "onset": 33.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 1,
+          "note_id": "p1_o33.0_c0"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 33.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 1,
+          "note_id": "p1_o33.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 33.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 33.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 17,
+          "part_idx": 0,
+          "note_id": "p0_o33.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 34.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 34.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 18,
+          "part_idx": 1,
+          "note_id": "p1_o34.0_c0"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 34.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 18,
+          "part_idx": 1,
+          "note_id": "p1_o34.0_c1"
+        },
+        {
+          "pitch_midi": 72,
+          "onset": 34.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 18,
+          "part_idx": 0,
+          "note_id": "p0_o34.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 35.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        84
+      ],
+      "notes": [
+        {
+          "pitch_midi": 84,
+          "onset": 35.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 18,
+          "part_idx": 0,
+          "note_id": "p0_o35.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 36.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 36.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 0,
+          "note_id": "p0_o36.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 36.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        56
+      ],
+      "notes": [
+        {
+          "pitch_midi": 56,
+          "onset": 36.0,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 1,
+          "note_id": "p1_o36.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 36.25,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 36.25,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 1,
+          "note_id": "p1_o36.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 36.5,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 59,
+          "onset": 36.5,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 1,
+          "note_id": "p1_o36.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 36.75,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 36.75,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 1,
+          "note_id": "p1_o36.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 37.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        56
+      ],
+      "notes": [
+        {
+          "pitch_midi": 56,
+          "onset": 37.0,
+          "duration": 0.5,
+          "staff": 2,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 1,
+          "note_id": "p1_o37.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 37.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 37.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 19,
+          "part_idx": 0,
+          "note_id": "p0_o37.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 38.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 38.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 0,
+          "note_id": "p0_o38.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 38.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 38.0,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 1,
+          "note_id": "p1_o38.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 38.25,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 59,
+          "onset": 38.25,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 1,
+          "note_id": "p1_o38.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 38.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        60
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 38.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 1,
+          "note_id": "p1_o38.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 38.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        62
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 38.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 1,
+          "note_id": "p1_o38.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 39.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 39.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 1,
+          "note_id": "p1_o39.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 39.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 69,
+          "onset": 39.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 20,
+          "part_idx": 0,
+          "note_id": "p0_o39.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 40.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 40.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 0,
+          "note_id": "p0_o40.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 40.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        56
+      ],
+      "notes": [
+        {
+          "pitch_midi": 56,
+          "onset": 40.0,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 1,
+          "note_id": "p1_o40.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 40.25,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 40.25,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 1,
+          "note_id": "p1_o40.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 40.5,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 59,
+          "onset": 40.5,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 1,
+          "note_id": "p1_o40.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 40.75,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 40.75,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 1,
+          "note_id": "p1_o40.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 41.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        56
+      ],
+      "notes": [
+        {
+          "pitch_midi": 56,
+          "onset": 41.0,
+          "duration": 0.5,
+          "staff": 2,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 1,
+          "note_id": "p1_o41.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 41.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 41.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 21,
+          "part_idx": 0,
+          "note_id": "p0_o41.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 42.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 42.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 0,
+          "note_id": "p0_o42.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 42.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 42.0,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 1,
+          "note_id": "p1_o42.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 42.25,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 59,
+          "onset": 42.25,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 1,
+          "note_id": "p1_o42.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 42.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        60
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 42.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 1,
+          "note_id": "p1_o42.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 42.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        62
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 42.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 1,
+          "note_id": "p1_o42.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 43.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 43.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 1,
+          "note_id": "p1_o43.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 43.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 69,
+          "onset": 43.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 22,
+          "part_idx": 0,
+          "note_id": "p0_o43.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 44.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        61,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 61,
+          "onset": 44.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 1,
+          "note_id": "p1_o44.0_n"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 44.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 0,
+          "note_id": "p0_o44.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 44.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        62
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 44.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 1,
+          "note_id": "p1_o44.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 44.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 44.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 1,
+          "note_id": "p1_o44.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 44.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        62
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 44.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 1,
+          "note_id": "p1_o44.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 45.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        61
+      ],
+      "notes": [
+        {
+          "pitch_midi": 61,
+          "onset": 45.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 1,
+          "note_id": "p1_o45.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 45.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 45.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 23,
+          "part_idx": 0,
+          "note_id": "p0_o45.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 46.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 46.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 1,
+          "note_id": "p1_o46.0_n"
+        },
+        {
+          "pitch_midi": 77,
+          "onset": 46.0,
+          "duration": 1.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 0,
+          "note_id": "p0_o46.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 46.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 46.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 1,
+          "note_id": "p1_o46.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 46.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        65
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 46.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 1,
+          "note_id": "p1_o46.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 46.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        67
+      ],
+      "notes": [
+        {
+          "pitch_midi": 67,
+          "onset": 46.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 1,
+          "note_id": "p1_o46.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 47.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 69,
+          "onset": 47.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 1,
+          "note_id": "p1_o47.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 47.5,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        67,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 67,
+          "onset": 47.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 1,
+          "note_id": "p1_o47.5_n"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 47.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 24,
+          "part_idx": 0,
+          "note_id": "p0_o47.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 48.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 65,
+          "onset": 48.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 1,
+          "note_id": "p1_o48.0_n"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 48.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 0,
+          "note_id": "p0_o48.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 48.5,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        64,
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 48.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 1,
+          "note_id": "p1_o48.5_n"
+        },
+        {
+          "pitch_midi": 72,
+          "onset": 48.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 0,
+          "note_id": "p0_o48.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 49.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 49.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 1,
+          "note_id": "p1_o49.0_n"
+        },
+        {
+          "pitch_midi": 71,
+          "onset": 49.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 0,
+          "note_id": "p0_o49.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 49.5,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        63,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 63,
+          "onset": 49.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 1,
+          "note_id": "p1_o49.5_n"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 49.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 25,
+          "part_idx": 0,
+          "note_id": "p0_o49.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 50.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        64,
+        68
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 50.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 26,
+          "part_idx": 1,
+          "note_id": "p1_o50.0_n"
+        },
+        {
+          "pitch_midi": 68,
+          "onset": 50.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 26,
+          "part_idx": 0,
+          "note_id": "p0_o50.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 50.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        62
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 50.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 26,
+          "part_idx": 1,
+          "note_id": "p1_o50.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 51.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 51.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 26,
+          "part_idx": 1,
+          "note_id": "p1_o51.0_n"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 51.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 26,
+          "part_idx": 0,
+          "note_id": "p0_o51.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 51.5,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 59,
+          "onset": 51.5,
+          "duration": 0.5,
+          "staff": 2,
+          "voice": null,
+          "measure": 26,
+          "part_idx": 1,
+          "note_id": "p1_o51.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 52.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 52.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 1,
+          "note_id": "p1_o52.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 52.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 1,
+          "note_id": "p1_o52.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 52.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 0,
+          "note_id": "p0_o52.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 52.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 52.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 1,
+          "note_id": "p1_o52.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 52.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 52.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 0,
+          "note_id": "p0_o52.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 52.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 52.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 0,
+          "note_id": "p0_o52.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 52.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 52.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 0,
+          "note_id": "p0_o52.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 53.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 53.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 1,
+          "note_id": "p1_o53.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 53.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 1,
+          "note_id": "p1_o53.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 53.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 0,
+          "note_id": "p0_o53.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 53.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 53.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 27,
+          "part_idx": 1,
+          "note_id": "p1_o53.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 54.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 54.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 1,
+          "note_id": "p1_o54.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 54.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 1,
+          "note_id": "p1_o54.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 54.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 0,
+          "note_id": "p0_o54.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 54.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 54.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 1,
+          "note_id": "p1_o54.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 54.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 54.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 0,
+          "note_id": "p0_o54.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 54.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 54.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 0,
+          "note_id": "p0_o54.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 54.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 74,
+          "onset": 54.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 0,
+          "note_id": "p0_o54.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 55.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 55.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 1,
+          "note_id": "p1_o55.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 55.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 1,
+          "note_id": "p1_o55.0_c2"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 55.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 0,
+          "note_id": "p0_o55.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 55.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 55.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 28,
+          "part_idx": 1,
+          "note_id": "p1_o55.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 56.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 56.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 1,
+          "note_id": "p1_o56.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 56.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 1,
+          "note_id": "p1_o56.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 56.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 0,
+          "note_id": "p0_o56.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 56.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 56.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 1,
+          "note_id": "p1_o56.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 56.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 56.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 0,
+          "note_id": "p0_o56.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 56.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 77,
+          "onset": 56.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 0,
+          "note_id": "p0_o56.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 56.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        79
+      ],
+      "notes": [
+        {
+          "pitch_midi": 79,
+          "onset": 56.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 0,
+          "note_id": "p0_o56.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 57.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 57.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 1,
+          "note_id": "p1_o57.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 57.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 1,
+          "note_id": "p1_o57.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 57.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 0,
+          "note_id": "p0_o57.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 57.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 57.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 29,
+          "part_idx": 1,
+          "note_id": "p1_o57.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 58.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 58.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 1,
+          "note_id": "p1_o58.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 58.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 1,
+          "note_id": "p1_o58.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 58.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 0,
+          "note_id": "p0_o58.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 58.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 58.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 1,
+          "note_id": "p1_o58.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 58.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        83
+      ],
+      "notes": [
+        {
+          "pitch_midi": 83,
+          "onset": 58.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 0,
+          "note_id": "p0_o58.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 58.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        84
+      ],
+      "notes": [
+        {
+          "pitch_midi": 84,
+          "onset": 58.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 0,
+          "note_id": "p0_o58.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 58.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        86
+      ],
+      "notes": [
+        {
+          "pitch_midi": 86,
+          "onset": 58.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 0,
+          "note_id": "p0_o58.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 59.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        88
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 59.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 1,
+          "note_id": "p1_o59.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 59.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 1,
+          "note_id": "p1_o59.0_c2"
+        },
+        {
+          "pitch_midi": 88,
+          "onset": 59.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 0,
+          "note_id": "p0_o59.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 59.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 59.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 30,
+          "part_idx": 1,
+          "note_id": "p1_o59.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 60.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 60.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 1,
+          "note_id": "p1_o60.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 60.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 1,
+          "note_id": "p1_o60.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 60.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 60.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 1,
+          "note_id": "p1_o60.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 60.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 60.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 0,
+          "note_id": "p0_o60.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 61.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        64,
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 61.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 1,
+          "note_id": "p1_o61.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 61.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 1,
+          "note_id": "p1_o61.0_c2"
+        },
+        {
+          "pitch_midi": 71,
+          "onset": 61.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 0,
+          "note_id": "p0_o61.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 61.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 61.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 1,
+          "note_id": "p1_o61.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 61.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 61.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 31,
+          "part_idx": 0,
+          "note_id": "p0_o61.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 62.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 62.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 1,
+          "note_id": "p1_o62.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 62.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 1,
+          "note_id": "p1_o62.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 62.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 0,
+          "note_id": "p0_o62.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 62.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 62.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 1,
+          "note_id": "p1_o62.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 63.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 63.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 1,
+          "note_id": "p1_o63.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 63.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 1,
+          "note_id": "p1_o63.0_c2"
+        },
+        {
+          "pitch_midi": 76,
+          "onset": 63.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 0,
+          "note_id": "p0_o63.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 63.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 63.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 32,
+          "part_idx": 1,
+          "note_id": "p1_o63.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 64.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 64.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 1,
+          "note_id": "p1_o64.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 64.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 1,
+          "note_id": "p1_o64.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 64.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 64.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 1,
+          "note_id": "p1_o64.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 64.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 64.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 0,
+          "note_id": "p0_o64.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 65.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        64,
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 65.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 1,
+          "note_id": "p1_o65.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 65.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 1,
+          "note_id": "p1_o65.0_c2"
+        },
+        {
+          "pitch_midi": 71,
+          "onset": 65.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 0,
+          "note_id": "p0_o65.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 65.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 65.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 1,
+          "note_id": "p1_o65.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 65.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 65.5,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 33,
+          "part_idx": 0,
+          "note_id": "p0_o65.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 66.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 66.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 1,
+          "note_id": "p1_o66.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 66.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 1,
+          "note_id": "p1_o66.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 66.0,
+          "duration": 2.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 0,
+          "note_id": "p0_o66.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 66.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 66.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 1,
+          "note_id": "p1_o66.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 67.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 67.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 1,
+          "note_id": "p1_o67.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 67.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 1,
+          "note_id": "p1_o67.0_c2"
+        }
+      ]
+    },
+    {
+      "onset": 67.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 67.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 34,
+          "part_idx": 1,
+          "note_id": "p1_o67.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 68.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 68.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 1,
+          "note_id": "p1_o68.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 68.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 1,
+          "note_id": "p1_o68.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 68.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 0,
+          "note_id": "p0_o68.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 68.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 68.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 1,
+          "note_id": "p1_o68.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 68.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 68.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 0,
+          "note_id": "p0_o68.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 68.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        72
+      ],
+      "notes": [
+        {
+          "pitch_midi": 72,
+          "onset": 68.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 0,
+          "note_id": "p0_o68.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 68.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        71
+      ],
+      "notes": [
+        {
+          "pitch_midi": 71,
+          "onset": 68.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 0,
+          "note_id": "p0_o68.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 69.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        69
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 69.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 1,
+          "note_id": "p1_o69.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 69.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 1,
+          "note_id": "p1_o69.0_c2"
+        },
+        {
+          "pitch_midi": 69,
+          "onset": 69.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 0,
+          "note_id": "p0_o69.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 69.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 69.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 35,
+          "part_idx": 1,
+          "note_id": "p1_o69.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 70.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        74
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 70.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 1,
+          "note_id": "p1_o70.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 70.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 1,
+          "note_id": "p1_o70.0_c2"
+        },
+        {
+          "pitch_midi": 74,
+          "onset": 70.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 0,
+          "note_id": "p0_o70.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 70.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 70.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 1,
+          "note_id": "p1_o70.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 70.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        76
+      ],
+      "notes": [
+        {
+          "pitch_midi": 76,
+          "onset": 70.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 0,
+          "note_id": "p0_o70.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 70.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        77
+      ],
+      "notes": [
+        {
+          "pitch_midi": 77,
+          "onset": 70.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 0,
+          "note_id": "p0_o70.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 70.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        79
+      ],
+      "notes": [
+        {
+          "pitch_midi": 79,
+          "onset": 70.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 0,
+          "note_id": "p0_o70.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 71.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 71.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 1,
+          "note_id": "p1_o71.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 71.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 1,
+          "note_id": "p1_o71.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 71.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 0,
+          "note_id": "p0_o71.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 71.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 71.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 36,
+          "part_idx": 1,
+          "note_id": "p1_o71.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 72.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 72.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 1,
+          "note_id": "p1_o72.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 72.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 1,
+          "note_id": "p1_o72.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 72.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 0,
+          "note_id": "p0_o72.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 72.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 72.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 1,
+          "note_id": "p1_o72.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 72.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        83
+      ],
+      "notes": [
+        {
+          "pitch_midi": 83,
+          "onset": 72.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 0,
+          "note_id": "p0_o72.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 72.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        84
+      ],
+      "notes": [
+        {
+          "pitch_midi": 84,
+          "onset": 72.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 0,
+          "note_id": "p0_o72.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 72.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        83
+      ],
+      "notes": [
+        {
+          "pitch_midi": 83,
+          "onset": 72.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 0,
+          "note_id": "p0_o72.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 73.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        60,
+        64,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 73.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 1,
+          "note_id": "p1_o73.0_c1"
+        },
+        {
+          "pitch_midi": 64,
+          "onset": 73.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 1,
+          "note_id": "p1_o73.0_c2"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 73.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 0,
+          "note_id": "p0_o73.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 73.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 73.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 37,
+          "part_idx": 1,
+          "note_id": "p1_o73.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 74.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        86
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 74.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 1,
+          "note_id": "p1_o74.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 74.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 1,
+          "note_id": "p1_o74.0_c2"
+        },
+        {
+          "pitch_midi": 86,
+          "onset": 74.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 0,
+          "note_id": "p0_o74.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 74.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 74.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 1,
+          "note_id": "p1_o74.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 74.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        88
+      ],
+      "notes": [
+        {
+          "pitch_midi": 88,
+          "onset": 74.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 0,
+          "note_id": "p0_o74.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 74.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        89
+      ],
+      "notes": [
+        {
+          "pitch_midi": 89,
+          "onset": 74.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 0,
+          "note_id": "p0_o74.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 74.75,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        91
+      ],
+      "notes": [
+        {
+          "pitch_midi": 91,
+          "onset": 74.75,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 0,
+          "note_id": "p0_o74.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 75.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        62,
+        65,
+        93
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 75.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 1,
+          "note_id": "p1_o75.0_c1"
+        },
+        {
+          "pitch_midi": 65,
+          "onset": 75.0,
+          "duration": 1.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 1,
+          "note_id": "p1_o75.0_c2"
+        },
+        {
+          "pitch_midi": 93,
+          "onset": 75.0,
+          "duration": 0.5,
+          "staff": 1,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 0,
+          "note_id": "p0_o75.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 75.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 75.0,
+          "duration": 1.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 38,
+          "part_idx": 1,
+          "note_id": "p1_o75.0_c0"
+        }
+      ]
+    },
+    {
+      "onset": 76.0,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        64
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 76.0,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 0,
+          "note_id": "p0_o76.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 76.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        52
+      ],
+      "notes": [
+        {
+          "pitch_midi": 52,
+          "onset": 76.0,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 1,
+          "note_id": "p1_o76.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 76.25,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        62
+      ],
+      "notes": [
+        {
+          "pitch_midi": 62,
+          "onset": 76.25,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 0,
+          "note_id": "p0_o76.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 76.25,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        50
+      ],
+      "notes": [
+        {
+          "pitch_midi": 50,
+          "onset": 76.25,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 1,
+          "note_id": "p1_o76.25_n"
+        }
+      ]
+    },
+    {
+      "onset": 76.5,
+      "staff": 1,
+      "event_type": "note",
+      "pitches": [
+        60
+      ],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "onset": 76.5,
+          "duration": 0.25,
+          "staff": 1,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 0,
+          "note_id": "p0_o76.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 76.5,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        48
+      ],
+      "notes": [
+        {
+          "pitch_midi": 48,
+          "onset": 76.5,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 1,
+          "note_id": "p1_o76.5_n"
+        }
+      ]
+    },
+    {
+      "onset": 76.75,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        47,
+        59
+      ],
+      "notes": [
+        {
+          "pitch_midi": 47,
+          "onset": 76.75,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 1,
+          "note_id": "p1_o76.75_n"
+        },
+        {
+          "pitch_midi": 59,
+          "onset": 76.75,
+          "duration": 0.25,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 0,
+          "note_id": "p0_o76.75_n"
+        }
+      ]
+    },
+    {
+      "onset": 77.0,
+      "staff": 2,
+      "event_type": "chord",
+      "pitches": [
+        45,
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 45,
+          "onset": 77.0,
+          "duration": 0.5,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 1,
+          "note_id": "p1_o77.0_n"
+        },
+        {
+          "pitch_midi": 57,
+          "onset": 77.0,
+          "duration": 0.5,
+          "staff": 2,
+          "voice": null,
+          "measure": 39,
+          "part_idx": 0,
+          "note_id": "p0_o77.0_n"
+        }
+      ]
+    },
+    {
+      "onset": 78.0,
+      "staff": 1,
+      "event_type": "chord",
+      "pitches": [
+        64,
+        72,
+        81
+      ],
+      "notes": [
+        {
+          "pitch_midi": 64,
+          "onset": 78.0,
+          "duration": 2.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 40,
+          "part_idx": 1,
+          "note_id": "p1_o78.0_c1"
+        },
+        {
+          "pitch_midi": 72,
+          "onset": 78.0,
+          "duration": 2.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 40,
+          "part_idx": 0,
+          "note_id": "p0_o78.0_c0"
+        },
+        {
+          "pitch_midi": 81,
+          "onset": 78.0,
+          "duration": 2.0,
+          "staff": 1,
+          "voice": null,
+          "measure": 40,
+          "part_idx": 0,
+          "note_id": "p0_o78.0_c1"
+        }
+      ]
+    },
+    {
+      "onset": 78.0,
+      "staff": 2,
+      "event_type": "note",
+      "pitches": [
+        57
+      ],
+      "notes": [
+        {
+          "pitch_midi": 57,
+          "onset": 78.0,
+          "duration": 2.0,
+          "staff": 2,
+          "voice": null,
+          "measure": 40,
+          "part_idx": 1,
+          "note_id": "p1_o78.0_c0"
+        }
+      ]
+    }
+  ]
+}
