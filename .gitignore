@@ -3,3 +3,5 @@ model.md
 progress.md
 read.md
 .venv/
+__pycache__/
+*.py[cod]
