@@ -1,0 +1,150 @@
+<mujoco model="chord_v5">
+    <include file="piano.xml"/>
+    
+    <option timestep="0.002" integrator="implicitfast"/>
+
+    <visual>
+        <global offwidth="1920" offheight="1080"/>
+        <headlight active="1"/>
+        <rgba haze="0.15 0.25 0.35 1"/>
+        <quality shadowsize="4096"/>
+    </visual>
+
+    <default>
+        <default class="robot">
+            <geom rgba="0.7 0.7 0.7 1" type="capsule" size="0.03"/>
+            <joint damping="5.0" armature="0.5" frictionloss="0.1"/>
+        </default>
+        <default class="finger">
+            <geom rgba="0.2 0.2 0.2 1" type="capsule" size="0.007"/>
+            <joint damping="0.1" armature="0.005" stiffness="0.5"/>
+        </default>
+        <default class="fingertip">
+            <geom rgba="1 0.2 0.2 1" type="sphere" size="0.008"/>
+            <site type="sphere" size="0.01" rgba="0 1 0 0.5"/>
+        </default>
+    </default>
+
+    <worldbody>
+        <light pos="0 0 2" dir="0 0 -1" castshadow="true"/>
+        <geom type="plane" size="2 2 0.1" rgba=".1 .1 .1 1"/>
+        
+        <!-- TARGET MARKER -->
+        <body name="debug_target" pos="0 0 0" mocap="true">
+            <geom type="sphere" size="0.015" rgba="0 1 1 0.5"/>
+        </body>
+
+        <!-- ROBOT PEDESTAL -->
+        <body name="pedestal" pos="0.63 -0.6 0">
+            <geom type="cylinder" size="0.1 0.1" rgba="0.1 0.1 0.1 1"/>
+            
+            <!-- ROBOT BASE (Sitting on pedestal) -->
+            <body name="base" pos="0 0 0.1" euler="0 0 1.57"> 
+                
+                <!-- LINK 1: WAIST (Pan) -->
+                <body name="link1" pos="0 0 0.05">
+                    <joint name="j1" axis="0 0 1" range="-2.0 2.0" class="robot"/>
+                    <geom fromto="0 0 0 0 0 0.15" class="robot" rgba="0.3 0.3 0.3 1"/>
+                    
+                    <!-- LINK 2: SHOULDER (Lift) -->
+                    <body name="link2" pos="0 0 0.15" euler="0 0 0">
+                        <joint name="j2" axis="1 0 0" range="-1.0 1.5" class="robot"/>
+                        <geom fromto="0 0 0 0 0.4 0" class="robot" rgba="0.8 0.4 0.1 1"/> 
+                        
+                        <!-- LINK 3: ELBOW -->
+                        <body name="link3" pos="0 0.4 0">
+                            <joint name="j3" axis="1 0 0" range="-2.5 2.5" class="robot"/>
+                            <geom fromto="0 0 0 0 0.35 0" class="robot" rgba="0.7 0.3 0.1 1"/> 
+
+                            <!-- LINK 4: WRIST 1 -->
+                            <body name="link4" pos="0 0.35 0">
+                                <joint name="j4" axis="0 1 0" range="-3.0 3.0" class="robot"/>
+                                <geom fromto="0 0 0 0 0.05 0" size="0.035" class="robot" rgba="0.3 0.3 0.3 1"/>
+
+                                <!-- LINK 5: WRIST 2 -->
+                                <body name="link5" pos="0 0.05 0">
+                                    <joint name="j5" axis="1 0 0" range="-1.5 1.5" class="robot"/>
+                                    <geom type="box" size="0.04 0.04 0.01" class="robot" rgba="0.2 0.2 0.2 1"/>
+
+                                    <!-- PALM -->
+                                    <body name="palm" pos="0 0.04 0">
+                                        <!-- Width 10cm -->
+                                        <geom type="box" size="0.07 0.01 0.04" rgba="0.1 0.1 0.1 1"/>
+                                        
+                                        <!-- FINGERS: Revolute (Hinge) Joints -->
+                                        
+                                        <!-- F1 (Thumb) -->
+                                        <body name="f1" pos="-0.05 0 -0.04" euler="0 0.5 0">
+                                            <joint name="jf1" axis="1 0 0" range="-0.5 0.5" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.04 -0.02" class="finger"/>
+                                            <body name="t1" pos="0 0.04 -0.02">
+                                                <geom class="fingertip"/>
+                                                <site name="tip_1" pos="0 0 0"/>
+                                            </body>
+                                        </body>
+
+                                        <!-- F2 -->
+                                        <body name="f2" pos="-0.025 0 0.04">
+                                            <joint name="jf2" axis="1 0 0" range="0 1.0" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.06 -0.02" class="finger"/>
+                                            <body name="t2" pos="0 0.06 -0.02">
+                                                <geom class="fingertip"/>
+                                                <site name="tip_2" pos="0 0 0"/>
+                                            </body>
+                                        </body>
+
+                                        <!-- F3 (Middle) -->
+                                        <body name="f3" pos="0 0 0.04">
+                                            <joint name="jf3" axis="1 0 0" range="0 1.0" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.065 -0.02" class="finger"/>
+                                            <body name="t3" pos="0 0.065 -0.02">
+                                                <geom class="fingertip"/>
+                                                <site name="tip_3" pos="0 0 0"/>
+                                            </body>
+                                        </body>
+
+                                        <!-- F4 -->
+                                        <body name="f4" pos="0.025 0 0.04">
+                                            <joint name="jf4" axis="1 0 0" range="0 1.0" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.06 -0.02" class="finger"/>
+                                            <body name="t4" pos="0 0.06 -0.02">
+                                                <geom class="fingertip"/>
+                                                <site name="tip_4" pos="0 0 0"/>
+                                            </body>
+                                        </body>
+
+                                        <!-- F5 (Pinky) -->
+                                        <body name="f5" pos="0.05 0 0.04">
+                                            <joint name="jf5" axis="1 0 0" range="0 1.0" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.05 -0.02" class="finger"/>
+                                            <body name="t5" pos="0 0.05 -0.02">
+                                                <geom class="fingertip"/>
+                                                <site name="tip_5" pos="0 0 0"/>
+                                            </body>
+                                        </body>
+
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    
+    <actuator>
+        <velocity name="v1" joint="j1" kv="100"/>
+        <velocity name="v2" joint="j2" kv="100"/>
+        <velocity name="v3" joint="j3" kv="100"/>
+        <velocity name="v4" joint="j4" kv="50"/>
+        <velocity name="v5" joint="j5" kv="50"/>
+        
+        <!-- Fingers need higher precision -->
+        <position name="pf1" joint="jf1" kp="10"/>
+        <position name="pf2" joint="jf2" kp="10"/>
+        <position name="pf3" joint="jf3" kp="10"/>
+        <position name="pf4" joint="jf4" kp="10"/>
+        <position name="pf5" joint="jf5" kp="10"/>
+    </actuator>
+</mujoco>
