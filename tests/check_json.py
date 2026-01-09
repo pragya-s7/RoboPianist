@@ -32,11 +32,12 @@ def inspect_json(filepath):
     if has_wrist:
         wrists = [e['wrist_target'] for e in events if e.get('wrist_target')]
         ws = np.array(wrists)
-        print(f"   Wrist X Range: {ws[:,0].min():.1f} to {ws[:,0].max():.1f} mm")
-        print(f"   Wrist Y Range: {ws[:,1].min():.1f} to {ws[:,1].max():.1f} mm")
+        print(f"   Wrist X Range: {ws[:,0].min():.3f} to {ws[:,0].max():.3f} m")
+        print(f"   Wrist Y Range: {ws[:,1].min():.3f} to {ws[:,1].max():.3f} m")
         
-        if ws[:,0].max() > 2000:
+        if ws[:,0].max() > 2.0:
             print("   WARNING: Wrist X > 2 meters? Check piano geometry.")
+
 
 if __name__ == "__main__":
     inspect_json(sys.argv[1])

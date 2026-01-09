@@ -8,6 +8,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 from src.ingest.parse_musicxml import extract_note_table, notes_to_events, m21
 from src.fingering.dp_solver import DPSolver
 from src.planning.kinematics import HandKinematics
+from src.planning.layer_c import LayerCPlanner
+
 
 def run(infile, outfile):
     print(f"--- 1. Ingesting: {infile} ---")
@@ -46,22 +48,33 @@ def run(infile, outfile):
 
     print(f"--- 3. Generating Kinematics ---")
     kinematics = HandKinematics()
-    final_events = kinematics.generate_trajectory(annotated_events)
+    events_with_kin = kinematics.generate_trajectory(annotated_events)
+
+    print(f"--- 4. Layer C: Contact Planning ---")
+    layer_c = LayerCPlanner()
+    final_events = layer_c.annotate_events(events_with_kin)
 
     # output
     payload = {
         "source": str(infile),
         "total_events": len(final_events),
-        "events": final_events
+        "events": final_events,
     }
 
     with open(outfile, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2)
     
-    print(f"--- 4. Success ---")
+    print(f"--- 5. Success ---")
     print(f"Saved annotated data to: {outfile}")
     sample = final_events[len(final_events)//2]
-    print(f"Sample Middle Event: t={sample['onset_sec']:.2f}s | Fingers={sample['fingering']} | Wrist={sample['wrist_target']}")
+    print(
+        f"Sample Middle Event: "
+        f"t={sample['onset_sec']:.2f}s | "
+        f"Fingers={sample.get('fingering')} | "
+        f"Wrist={sample.get('wrist_target')} | "
+        f"Contacts={len(sample.get('contacts', []))}"
+    )
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

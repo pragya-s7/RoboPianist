@@ -1,180 +1,165 @@
-<mujoco model="chord_v5_final_stable">
+<mujoco model="chord_v5_paper_ready">
     <include file="piano.xml"/>
     
-    <!-- STABILITY CORE:
-         - implicitfast: The only integrator that handles stiff robot joints without exploding.
-         - timestep="0.002": Standard 500Hz simulation.
-    -->
-    <option timestep="0.002" integrator="implicitfast" gravity="0 0 -9.81"/>
+    <option timestep="0.002" integrator="implicitfast" iterations="50" gravity="0 0 -9.81" solver="Newton"/>
 
     <visual>
         <global offwidth="1920" offheight="1080"/>
-        <headlight active="1"/>
+        <headlight active="1" ambient="0.3 0.3 0.3" diffuse="0.6 0.6 0.6"/>
         <rgba haze="0.15 0.25 0.35 1"/>
         <quality shadowsize="4096"/>
     </visual>
 
     <default>
-        <!-- MASTER DEFAULT -->
-        <default class="robot_part">
-            <geom material="mat_robot"/> 
-            <!-- High damping = Molasses. Stops vibration. -->
-            <joint damping="10.0" armature="2.0" frictionloss="1.0"/>
+        <default class="robot">
+            <geom material="mat_robot" condim="4" friction="1.0 0.05 0.001"/> 
+            <joint damping="0.5" armature="0.01" frictionloss="0.1"/>
         </default>
-
-        <!-- ARM: Ghost Mode (No collisions) -->
-        <default class="arm">
-            <geom rgba="0.8 0.8 0.8 1" type="capsule" size="0.035" contype="0" conaffinity="0"/>
+        <default class="gantry">
+            <joint damping="100" armature="1.0"/>
         </default>
-        
-        <!-- WRIST: Ghost Mode -->
-        <default class="wrist">
-            <geom rgba="0.3 0.3 0.3 1" type="capsule" size="0.025" contype="0" conaffinity="0"/>
-            <joint damping="2.0" armature="0.5"/>
-        </default>
-        
-        <!-- FINGER: Ghost Mode -->
         <default class="finger">
-            <geom rgba="0.9 0.9 0.9 1" type="capsule" size="0.009" contype="0" conaffinity="0"/>
-            <joint damping="0.1" armature="0.05" limited="true" range="-0.1 1.6"/>
+            <geom type="capsule" size="0.009" rgba="0.2 0.2 0.2 1" contype="1" conaffinity="0"/> 
+            <joint damping="0.05" armature="0.005" stiffness="0.5" limited="true"/>
         </default>
-        
-        <!-- FINGERTIP: Solid Collider -->
         <default class="fingertip">
-            <geom rgba="1 0.2 0.2 1" type="sphere" size="0.009" 
+            <geom type="sphere" size="0.0085" rgba="0.8 0.2 0.2 1" 
                   contype="1" conaffinity="1" 
-                  friction="1.5 0.005 0.0001" solimp="0.9 0.95 0.001" solref="0.005 1"/>
-            <site type="sphere" size="0.01" rgba="0 1 0 0.5"/>
+                  friction="1.5 0.005 0.0001" solimp="0.95 0.99 0.001" solref="0.005 1"/>
+            <site type="sphere" size="0.005" rgba="0 1 0 0.5"/>
         </default>
     </default>
 
     <asset>
-        <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+        <texture type="skybox" builtin="gradient" rgb1="0.1 0.15 0.2" rgb2="0 0 0" width="512" height="3072"/>
         <texture name="texplane" type="2d" builtin="checker" rgb1=".2 .3 .4" rgb2=".1 0.15 0.2" width="512" height="512" mark="cross" markrgb=".8 .8 .8"/>
         <material name="matplane" reflectance="0.3" texture="texplane" texrepeat="1 1" texuniform="true"/>
-        <material name="mat_robot" specular="1" shininess="1" rgba="0.8 0.8 0.8 1"/>
+        <material name="mat_robot" specular="0.5" shininess="0.5" rgba="0.7 0.7 0.7 1"/>
     </asset>
 
     <worldbody>
-        <light pos="0 0 2" dir="0 0 -1" castshadow="true" diffuse="0.8 0.8 0.8"/>
-        <!-- Floor moved down to prevent spawn explosions -->
+        <light pos="0.5 -0.5 2" dir="0 0 -1" castshadow="true" diffuse="0.8 0.8 0.8"/>
         <geom name="floor" pos="0 0 -1.0" size="2 2 0.1" type="plane" material="matplane"/>
         
-        <body name="debug_target" pos="0 0 0" mocap="true">
-            <geom type="sphere" size="0.02" rgba="0 1 1 0.8"/>
-        </body>
-
-        <!-- ROBOT BASE -->
-        <body name="base" pos="0.63 -0.6 0">
-            <geom type="cylinder" size="0.12 0.15" rgba="0.1 0.1 0.1 1" pos="0 0 0.075"/>
+        <body name="gantry_x" pos="0 0 0">
+            <inertial pos="0 0 0" mass="10" diaginertia="1 1 1"/>
+            <joint name="tx" type="slide" axis="1 0 0" class="gantry"/>
             
-            <!-- Link 1: Waist (Z-Axis Pan) -->
-            <body name="link1" pos="0 0 0.15">
-                <joint name="j1" axis="0 0 1" range="-2.5 2.5" class="robot_part"/>
-                <geom fromto="0 0 0 0 0 0.1" class="arm"/>
+            <body name="gantry_y" pos="0 0 0">
+                <inertial pos="0 0 0" mass="8" diaginertia="1 1 1"/>
+                <joint name="ty" type="slide" axis="0 1 0" class="gantry"/>
                 
-                <!-- Link 2: Shoulder (Y-Axis Pitch - Bends Forward) -->
-                <body name="link2" pos="0 0 0.1">
-                    <joint name="j2" axis="0 1 0" range="-1.5 1.5" class="robot_part"/>
-                    <geom fromto="0 0 0 0 0 0.4" class="arm"/> 
+                <body name="gantry_z" pos="0 0 0">
+                    <inertial pos="0 0 0" mass="5" diaginertia="1 1 1"/>
+                    <joint name="tz" type="slide" axis="0 0 1" class="gantry"/>
                     
-                    <!-- Link 3: Elbow (Y-Axis Pitch - Bends Forward) -->
-                    <!-- FIX: Axis is now 0 1 0. This creates a standard "reach forward" arm. -->
-                    <body name="link3" pos="0 0 0.4">
-                        <joint name="j3" axis="0 1 0" range="-2.5 0.5" class="robot_part"/>
-                        <geom fromto="0 0 0 0 0.35 0" class="arm"/> 
+                    <body name="wrist_roll" pos="0 0 0">
+                        <!-- ADDED INERTIAL -->
+                        <inertial pos="0 0 0" mass="1" diaginertia="0.1 0.1 0.1"/>
+                        <joint name="rx" axis="1 0 0" range="-0.5 0.5" class="robot"/>
+                        
+                        <body name="wrist_pitch" pos="0 0 0">
+                            <!-- ADDED INERTIAL -->
+                            <inertial pos="0 0 0" mass="1" diaginertia="0.1 0.1 0.1"/>
+                            <joint name="ry" axis="0 1 0" range="-0.8 0.8" class="robot"/>
+                            
+                            <body name="wrist_yaw" pos="0 0 0">
+                                <!-- ADDED INERTIAL -->
+                                <inertial pos="0 0 0" mass="1" diaginertia="0.1 0.1 0.1"/>
+                                <joint name="rz" axis="0 0 1" range="-0.8 0.8" class="robot"/>
 
-                        <!-- Link 4: Forearm (Y-Axis Twist) -->
-                        <body name="link4" pos="0 0.35 0">
-                            <!-- This allows the hand to rotate to be flat -->
-                            <joint name="j4" axis="0 1 0" range="-3.0 3.0" class="robot_part"/>
-                            <geom fromto="0 0 0 0 0.15 0" class="arm" size="0.03"/>
-
-                            <!-- Link 5: Wrist Pitch (X-Axis) -->
-                            <body name="wrist_pitch" pos="0 0.15 0">
-                                <joint name="j5" axis="1 0 0" range="-1.5 1.5" class="wrist"/>
-                                <geom fromto="0 0 0 0 0.04 0" class="wrist"/>
-
-                                <!-- Link 6: Wrist Yaw (Z-Axis) -->
-                                <body name="wrist_yaw" pos="0 0.04 0">
-                                    <joint name="j6" axis="0 0 1" range="-0.5 0.5" class="wrist"/>
-                                    <geom fromto="0 0 0 0 0.04 0" class="wrist"/>
+                                <body name="palm" pos="0 0 0" euler="1.57 0 3.14"> 
+                                    <geom type="box" size="0.045 0.04 0.015" pos="0 0.02 0" class="robot"/>
                                     
-                                    <!-- PALM -->
-                                    <body name="palm" pos="0 0.04 0" euler="-1.57 0 0">
-                                        <geom type="box" size="0.045 0.01 0.045" rgba="0.2 0.2 0.2 1" contype="0" conaffinity="0"/>
-                                        
-                                        <!-- THUMB -->
-                                        <body name="thumb_base" pos="-0.05 -0.01 0.02" euler="0.5 0.8 0">
-                                            <joint name="jf1_abduction" axis="0 0 1" range="-0.5 0.5" class="finger"/>
+                                    <!-- THUMB -->
+                                    <body name="th_base" pos="0.02 -0.02 0.02" euler="0 0.785 0">
+                                        <joint name="th_abd" axis="0 0 -1" range="-0.5 0.5" class="finger"/>
+                                        <geom fromto="0 0 0 0.03 0 0" class="finger"/>
+                                        <body name="th_prox" pos="0.03 0 0" euler="0 0 0">
+                                            <joint name="th_j2" axis="0 1 0" range="-0.2 0.5" class="finger"/>
                                             <geom fromto="0 0 0 0.03 0 0" class="finger"/>
-                                            <body name="thumb_prox" pos="0.03 0 0">
-                                                <joint name="jf1" axis="0 1 0" range="-0.2 1.0" class="finger"/>
-                                                <geom fromto="0 0 0 0.03 0 0" class="finger"/>
-                                                <body name="thumb_dist" pos="0.03 0 0">
-                                                    <joint name="jf1_dist" axis="0 1 0" range="-0.2 1.2" class="finger"/>
-                                                    <geom fromto="0 0 0 0.025 0 0" class="finger"/>
-                                                    <body name="t1" pos="0.025 0 0">
-                                                        <geom class="fingertip"/>
-                                                        <site name="tip_1" pos="0 0 0"/>
-                                                    </body>
-                                                </body>
-                                            </body>
-                                        </body>
-
-                                        <!-- FINGERS -->
-                                        <body name="f2_prox" pos="-0.028 0 0.05" euler="0 0 0">
-                                            <joint name="jf2" axis="1 0 0" class="finger"/>
-                                            <geom fromto="0 0 0 0 0 0.04" class="finger"/>
-                                            <body name="f2_mid" pos="0 0 0.04">
-                                                <joint name="jf2_mid" axis="1 0 0" class="finger"/>
-                                                <geom fromto="0 0 0 0 0 0.03" class="finger"/>
-                                                <body name="t2" pos="0 0 0.03">
+                                            <body name="th_dist" pos="0.03 0 0">
+                                                <joint name="th_j3" axis="0 1 0" range="-0.2 0.8" class="finger"/>
+                                                <geom fromto="0 0 0 0.025 0 0" class="finger"/>
+                                                <body name="th_tip" pos="0.025 0 0">
+                                                    <joint name="th_j4" axis="0 1 0" range="-0.2 1.0" class="finger"/>
                                                     <geom class="fingertip"/>
-                                                    <site name="tip_2" pos="0 0 0"/>
+                                                    <site name="tip_1" pos="0.005 0 0"/>
                                                 </body>
                                             </body>
                                         </body>
-
-                                        <body name="f3_prox" pos="0 0 0.055" euler="0 0 0">
-                                            <joint name="jf3" axis="1 0 0" class="finger"/>
-                                            <geom fromto="0 0 0 0 0 0.045" class="finger"/>
-                                            <body name="f3_mid" pos="0 0 0.045">
-                                                <joint name="jf3_mid" axis="1 0 0" class="finger"/>
-                                                <geom fromto="0 0 0 0 0 0.035" class="finger"/>
-                                                <body name="t3" pos="0 0 0.035">
+                                    </body>
+                                    <!-- INDEX -->
+                                    <body name="ff_base" pos="0.033 0.06 0">
+                                        <joint name="ff_abd" axis="0 0 1" range="-0.4 0.4" class="finger"/>
+                                        <geom fromto="0 0 0 0 0.04 0" class="finger"/>
+                                        <body name="ff_prox" pos="0 0.04 0">
+                                            <joint name="ff_j2" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.03 0" class="finger"/>
+                                            <body name="ff_dist" pos="0 0.03 0">
+                                                <joint name="ff_j3" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                                <geom fromto="0 0 0 0 0.025 0" class="finger"/>
+                                                <body name="ff_tip" pos="0 0.025 0">
+                                                    <joint name="ff_j4" axis="1 0 0" range="-0.2 1.6" class="finger"/>
                                                     <geom class="fingertip"/>
-                                                    <site name="tip_3" pos="0 0 0"/>
+                                                    <site name="tip_2" pos="0 0.005 0"/>
                                                 </body>
                                             </body>
                                         </body>
-
-                                        <body name="f4_prox" pos="0.028 0 0.05" euler="0 0 0">
-                                            <joint name="jf4" axis="1 0 0" class="finger"/>
-                                            <geom fromto="0 0 0 0 0 0.04" class="finger"/>
-                                            <body name="f4_mid" pos="0 0 0.04">
-                                                <joint name="jf4_mid" axis="1 0 0" class="finger"/>
-                                                <geom fromto="0 0 0 0 0 0.03" class="finger"/>
-                                                <body name="t4" pos="0 0 0.03">
+                                    </body>
+                                    <!-- MIDDLE -->
+                                    <body name="mf_base" pos="0.011 0.065 0">
+                                        <joint name="mf_abd" axis="0 0 1" range="-0.2 0.2" class="finger"/>
+                                        <geom fromto="0 0 0 0 0.045 0" class="finger"/>
+                                        <body name="mf_prox" pos="0 0.045 0">
+                                            <joint name="mf_j2" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.035 0" class="finger"/>
+                                            <body name="mf_dist" pos="0 0.035 0">
+                                                <joint name="mf_j3" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                                <geom fromto="0 0 0 0 0.025 0" class="finger"/>
+                                                <body name="mf_tip" pos="0 0.025 0">
+                                                    <joint name="mf_j4" axis="1 0 0" range="-0.2 1.6" class="finger"/>
                                                     <geom class="fingertip"/>
-                                                    <site name="tip_4" pos="0 0 0"/>
+                                                    <site name="tip_3" pos="0 0.005 0"/>
                                                 </body>
                                             </body>
                                         </body>
-
-                                        <body name="f5_prox" pos="0.054 0 0.045" euler="0 0 0">
-                                            <joint name="jf5" axis="1 0 0" class="finger"/>
-                                            <geom fromto="0 0 0 0 0 0.03" class="finger"/>
-                                            <body name="f5_mid" pos="0 0 0.03">
-                                                <joint name="jf5_mid" axis="1 0 0" class="finger"/>
-                                                <geom fromto="0 0 0 0 0 0.025" class="finger"/>
-                                                <body name="t5" pos="0 0 0.025">
+                                    </body>
+                                    <!-- RING -->
+                                    <body name="rf_base" pos="-0.011 0.06 0">
+                                        <joint name="rf_abd" axis="0 0 1" range="-0.2 0.2" class="finger"/>
+                                        <geom fromto="0 0 0 0 0.04 0" class="finger"/>
+                                        <body name="rf_prox" pos="0 0.04 0">
+                                            <joint name="rf_j2" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.03 0" class="finger"/>
+                                            <body name="rf_dist" pos="0 0.03 0">
+                                                <joint name="rf_j3" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                                <geom fromto="0 0 0 0 0.025 0" class="finger"/>
+                                                <body name="rf_tip" pos="0 0.025 0">
+                                                    <joint name="rf_j4" axis="1 0 0" range="-0.2 1.6" class="finger"/>
                                                     <geom class="fingertip"/>
-                                                    <site name="tip_5" pos="0 0 0"/>
+                                                    <site name="tip_4" pos="0 0.005 0"/>
                                                 </body>
                                             </body>
                                         </body>
-
+                                    </body>
+                                    <!-- PINKY -->
+                                    <body name="lf_base" pos="-0.033 0.055 0">
+                                        <joint name="lf_abd" axis="0 0 1" range="-0.4 0.4" class="finger"/>
+                                        <geom fromto="0 0 0 0 0.035 0" class="finger"/>
+                                        <body name="lf_prox" pos="0 0.035 0">
+                                            <joint name="lf_j2" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                            <geom fromto="0 0 0 0 0.025 0" class="finger"/>
+                                            <body name="lf_dist" pos="0 0.025 0">
+                                                <joint name="lf_j3" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                                <geom fromto="0 0 0 0 0.02 0" class="finger"/>
+                                                <body name="lf_tip" pos="0 0.02 0">
+                                                    <joint name="lf_j4" axis="1 0 0" range="-0.2 1.6" class="finger"/>
+                                                    <geom class="fingertip"/>
+                                                    <site name="tip_5" pos="0 0.005 0"/>
+                                                </body>
+                                            </body>
+                                        </body>
                                     </body>
                                 </body>
                             </body>
@@ -186,26 +171,16 @@
     </worldbody>
     
     <actuator>
-        <!-- POSITION ACTUATORS: Act like virtual springs. Stable with implicitfast. -->
-        <!-- KP=50 is soft enough to not explode, stiff enough to hold up the arm -->
-        <position name="p1" joint="j1" kp="50" ctrllimited="true" ctrlrange="-2.5 2.5"/>
-        <position name="p2" joint="j2" kp="50" ctrllimited="true" ctrlrange="-1.5 1.5"/>
-        <position name="p3" joint="j3" kp="50" ctrllimited="true" ctrlrange="-2.5 0.5"/>
-        <position name="p4" joint="j4" kp="50" ctrllimited="true" ctrlrange="-3.0 3.0"/>
-        
-        <position name="p5" joint="j5" kp="20" ctrllimited="true" ctrlrange="-1.5 1.5"/>
-        <position name="p6" joint="j6" kp="20" ctrllimited="true" ctrlrange="-0.5 0.5"/>
-        
-        <!-- Fingers -->
-        <position name="pf1" joint="jf1" kp="5" ctrllimited="true" ctrlrange="-0.2 1.0"/>
-        <position name="pf1d" joint="jf1_dist" kp="5" ctrllimited="true" ctrlrange="-0.2 1.2"/>
-        <position name="pf2" joint="jf2" kp="5" ctrllimited="true" ctrlrange="-0.2 1.6"/>
-        <position name="pf2m" joint="jf2_mid" kp="5" ctrllimited="true" ctrlrange="0 1.6"/>
-        <position name="pf3" joint="jf3" kp="5" ctrllimited="true" ctrlrange="-0.2 1.6"/>
-        <position name="pf3m" joint="jf3_mid" kp="5" ctrllimited="true" ctrlrange="0 1.6"/>
-        <position name="pf4" joint="jf4" kp="5" ctrllimited="true" ctrlrange="-0.2 1.6"/>
-        <position name="pf4m" joint="jf4_mid" kp="5" ctrllimited="true" ctrlrange="0 1.6"/>
-        <position name="pf5" joint="jf5" kp="5" ctrllimited="true" ctrlrange="-0.2 1.6"/>
-        <position name="pf5m" joint="jf5_mid" kp="5" ctrllimited="true" ctrlrange="0 1.6"/>
+        <position name="a_tx" joint="tx" kp="5000"/>
+        <position name="a_ty" joint="ty" kp="5000"/>
+        <position name="a_tz" joint="tz" kp="5000"/>
+        <position name="a_rx" joint="rx" kp="500"/>
+        <position name="a_ry" joint="ry" kp="500"/>
+        <position name="a_rz" joint="rz" kp="500"/>
+        <position name="a_th_abd" joint="th_abd" kp="50"/> <position name="a_th_j2" joint="th_j2" kp="50"/> <position name="a_th_j3" joint="th_j3" kp="50"/> <position name="a_th_j4" joint="th_j4" kp="50"/>
+        <position name="a_ff_abd" joint="ff_abd" kp="50"/> <position name="a_ff_j2" joint="ff_j2" kp="50"/> <position name="a_ff_j3" joint="ff_j3" kp="50"/> <position name="a_ff_j4" joint="ff_j4" kp="50"/>
+        <position name="a_mf_abd" joint="mf_abd" kp="50"/> <position name="a_mf_j2" joint="mf_j2" kp="50"/> <position name="a_mf_j3" joint="mf_j3" kp="50"/> <position name="a_mf_j4" joint="mf_j4" kp="50"/>
+        <position name="a_rf_abd" joint="rf_abd" kp="50"/> <position name="a_rf_j2" joint="rf_j2" kp="50"/> <position name="a_rf_j3" joint="rf_j3" kp="50"/> <position name="a_rf_j4" joint="rf_j4" kp="50"/>
+        <position name="a_lf_abd" joint="lf_abd" kp="50"/> <position name="a_lf_j2" joint="lf_j2" kp="50"/> <position name="a_lf_j3" joint="lf_j3" kp="50"/> <position name="a_lf_j4" joint="lf_j4" kp="50"/>
     </actuator>
 </mujoco>

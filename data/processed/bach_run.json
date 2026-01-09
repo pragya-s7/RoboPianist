@@ -42,48 +42,12 @@
       ],
       "fingering": [
         1,
-        5
+        3
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 0.0,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.0,
-          "strike_time_sec": 0.0,
-          "hold_end_sec": 0.1,
-          "release_end_sec": 0.30000000000000004
-        },
-        {
-          "pitch": 74,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 0.0,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.0,
-          "strike_time_sec": 0.0,
-          "hold_end_sec": 0.1,
-          "release_end_sec": 0.30000000000000004
-        }
       ]
     },
     {
@@ -125,49 +89,13 @@
         }
       ],
       "fingering": [
-        2,
-        4
+        1,
+        2
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 0.0,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.0,
-          "strike_time_sec": 0.0,
-          "hold_end_sec": 0.1,
-          "release_end_sec": 0.30000000000000004
-        },
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 0.0,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.0,
-          "strike_time_sec": 0.0,
-          "hold_end_sec": 0.1,
-          "release_end_sec": 0.30000000000000004
-        }
       ]
     },
     {
@@ -197,31 +125,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 0.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.35,
-          "strike_time_sec": 0.5,
-          "hold_end_sec": 0.6,
-          "release_end_sec": 0.8
-        }
       ]
     },
     {
@@ -251,31 +160,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 0.75,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.6,
-          "strike_time_sec": 0.75,
-          "hold_end_sec": 0.85,
-          "release_end_sec": 1.05
-        }
       ]
     },
     {
@@ -309,25 +199,6 @@
         0.78,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 1.0,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.85,
-          "strike_time_sec": 1.0,
-          "hold_end_sec": 1.1,
-          "release_end_sec": 1.3
-        }
       ]
     },
     {
@@ -355,31 +226,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 1.0,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 0.85,
-          "strike_time_sec": 1.0,
-          "hold_end_sec": 1.1,
-          "release_end_sec": 1.3
-        }
       ]
     },
     {
@@ -407,31 +259,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 1.25,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 1.1,
-          "strike_time_sec": 1.25,
-          "hold_end_sec": 1.35,
-          "release_end_sec": 1.55
-        }
       ]
     },
     {
@@ -459,31 +292,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 1.5,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 1.35,
-          "strike_time_sec": 1.5,
-          "hold_end_sec": 1.6,
-          "release_end_sec": 1.8
-        }
       ]
     },
     {
@@ -511,31 +325,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 1.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 1.35,
-          "strike_time_sec": 1.5,
-          "hold_end_sec": 1.6,
-          "release_end_sec": 1.8
-        }
       ]
     },
     {
@@ -563,31 +358,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 2.0,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 1.85,
-          "strike_time_sec": 2.0,
-          "hold_end_sec": 2.1,
-          "release_end_sec": 2.3000000000000003
-        }
       ]
     },
     {
@@ -615,31 +391,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 2.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 2.35,
-          "strike_time_sec": 2.5,
-          "hold_end_sec": 2.6,
-          "release_end_sec": 2.8000000000000003
-        }
       ]
     },
     {
@@ -682,48 +439,12 @@
       ],
       "fingering": [
         1,
-        5
+        4
       ],
       "wrist_target": [
         0.636,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 3.0,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 2.85,
-          "strike_time_sec": 3.0,
-          "hold_end_sec": 3.1,
-          "release_end_sec": 3.3000000000000003
-        },
-        {
-          "pitch": 76,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 3.0,
-          "velocity": 80,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 2.85,
-          "strike_time_sec": 3.0,
-          "hold_end_sec": 3.1,
-          "release_end_sec": 3.3000000000000003
-        }
       ]
     },
     {
@@ -753,31 +474,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 3.5,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 3.35,
-          "strike_time_sec": 3.5,
-          "hold_end_sec": 3.6,
-          "release_end_sec": 3.8000000000000003
-        }
       ]
     },
     {
@@ -807,31 +509,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 3.75,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 3.6,
-          "strike_time_sec": 3.75,
-          "hold_end_sec": 3.85,
-          "release_end_sec": 4.05
-        }
       ]
     },
     {
@@ -867,25 +550,6 @@
         0.8480000000000001,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 76,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 4.0,
-          "velocity": 80,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 3.85,
-          "strike_time_sec": 4.0,
-          "hold_end_sec": 4.1,
-          "release_end_sec": 4.3
-        }
       ]
     },
     {
@@ -915,31 +579,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.883,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 78,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 4.25,
-          "velocity": 80,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 4.1,
-          "strike_time_sec": 4.25,
-          "hold_end_sec": 4.35,
-          "release_end_sec": 4.55
-        }
       ]
     },
     {
@@ -967,31 +612,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.896,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 4.5,
-          "velocity": 80,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 4.35,
-          "strike_time_sec": 4.5,
-          "hold_end_sec": 4.6,
-          "release_end_sec": 4.8
-        }
       ]
     },
     {
@@ -1019,31 +645,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 4.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 4.35,
-          "strike_time_sec": 4.5,
-          "hold_end_sec": 4.6,
-          "release_end_sec": 4.8
-        }
       ]
     },
     {
@@ -1071,31 +678,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 5.0,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 4.85,
-          "strike_time_sec": 5.0,
-          "hold_end_sec": 5.1,
-          "release_end_sec": 5.3
-        }
       ]
     },
     {
@@ -1123,31 +711,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 5.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 5.35,
-          "strike_time_sec": 5.5,
-          "hold_end_sec": 5.6,
-          "release_end_sec": 5.8
-        }
       ]
     },
     {
@@ -1175,31 +744,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 6.0,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 5.85,
-          "strike_time_sec": 6.0,
-          "hold_end_sec": 6.1,
-          "release_end_sec": 6.3
-        }
       ]
     },
     {
@@ -1227,31 +777,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 6.0,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 5.85,
-          "strike_time_sec": 6.0,
-          "hold_end_sec": 6.1,
-          "release_end_sec": 6.3
-        }
       ]
     },
     {
@@ -1279,31 +810,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 6.5,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 6.35,
-          "strike_time_sec": 6.5,
-          "hold_end_sec": 6.6,
-          "release_end_sec": 6.8
-        }
       ]
     },
     {
@@ -1331,31 +843,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 6.75,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 6.6,
-          "strike_time_sec": 6.75,
-          "hold_end_sec": 6.85,
-          "release_end_sec": 7.05
-        }
       ]
     },
     {
@@ -1383,31 +876,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 7.0,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 6.85,
-          "strike_time_sec": 7.0,
-          "hold_end_sec": 7.1,
-          "release_end_sec": 7.3
-        }
       ]
     },
     {
@@ -1441,25 +915,6 @@
         0.756,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 7.25,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 7.1,
-          "strike_time_sec": 7.25,
-          "hold_end_sec": 7.35,
-          "release_end_sec": 7.55
-        }
       ]
     },
     {
@@ -1487,31 +942,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 7.5,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 7.35,
-          "strike_time_sec": 7.5,
-          "hold_end_sec": 7.6,
-          "release_end_sec": 7.8
-        }
       ]
     },
     {
@@ -1539,31 +975,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 7.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 7.35,
-          "strike_time_sec": 7.5,
-          "hold_end_sec": 7.6,
-          "release_end_sec": 7.8
-        }
       ]
     },
     {
@@ -1591,31 +1008,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 8.0,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 7.85,
-          "strike_time_sec": 8.0,
-          "hold_end_sec": 8.1,
-          "release_end_sec": 8.299999999999999
-        }
       ]
     },
     {
@@ -1643,31 +1041,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 8.25,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 8.1,
-          "strike_time_sec": 8.25,
-          "hold_end_sec": 8.35,
-          "release_end_sec": 8.549999999999999
-        }
       ]
     },
     {
@@ -1695,31 +1074,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 8.5,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 8.35,
-          "strike_time_sec": 8.5,
-          "hold_end_sec": 8.6,
-          "release_end_sec": 8.799999999999999
-        }
       ]
     },
     {
@@ -1753,25 +1113,6 @@
         0.732,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 8.75,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 8.6,
-          "strike_time_sec": 8.75,
-          "hold_end_sec": 8.85,
-          "release_end_sec": 9.049999999999999
-        }
       ]
     },
     {
@@ -1813,49 +1154,13 @@
         }
       ],
       "fingering": [
-        2,
-        4
+        1,
+        2
       ],
       "wrist_target": [
         0.66,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 9.0,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 8.85,
-          "strike_time_sec": 9.0,
-          "hold_end_sec": 9.1,
-          "release_end_sec": 9.299999999999999
-        },
-        {
-          "pitch": 66,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 9.0,
-          "velocity": 80,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 8.85,
-          "strike_time_sec": 9.0,
-          "hold_end_sec": 9.1,
-          "release_end_sec": 9.299999999999999
-        }
       ]
     },
     {
@@ -1883,31 +1188,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 9.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 9.35,
-          "strike_time_sec": 9.5,
-          "hold_end_sec": 9.6,
-          "release_end_sec": 9.799999999999999
-        }
       ]
     },
     {
@@ -1935,31 +1221,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 9.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 9.35,
-          "strike_time_sec": 9.5,
-          "hold_end_sec": 9.6,
-          "release_end_sec": 9.799999999999999
-        }
       ]
     },
     {
@@ -1987,31 +1254,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 9.75,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 9.6,
-          "strike_time_sec": 9.75,
-          "hold_end_sec": 9.85,
-          "release_end_sec": 10.049999999999999
-        }
       ]
     },
     {
@@ -2039,31 +1287,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 10.0,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 9.85,
-          "strike_time_sec": 10.0,
-          "hold_end_sec": 10.1,
-          "release_end_sec": 10.299999999999999
-        }
       ]
     },
     {
@@ -2091,31 +1320,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 10.0,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 9.85,
-          "strike_time_sec": 10.0,
-          "hold_end_sec": 10.1,
-          "release_end_sec": 10.299999999999999
-        }
       ]
     },
     {
@@ -2143,31 +1353,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 10.25,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 10.1,
-          "strike_time_sec": 10.25,
-          "hold_end_sec": 10.35,
-          "release_end_sec": 10.549999999999999
-        }
       ]
     },
     {
@@ -2210,48 +1401,12 @@
       ],
       "fingering": [
         1,
-        5
+        2
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 10.5,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 10.35,
-          "strike_time_sec": 10.5,
-          "hold_end_sec": 10.6,
-          "release_end_sec": 10.799999999999999
-        },
-        {
-          "pitch": 71,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 10.5,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 10.35,
-          "strike_time_sec": 10.5,
-          "hold_end_sec": 10.6,
-          "release_end_sec": 10.799999999999999
-        }
       ]
     },
     {
@@ -2279,31 +1434,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 11.0,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 10.85,
-          "strike_time_sec": 11.0,
-          "hold_end_sec": 11.1,
-          "release_end_sec": 11.299999999999999
-        }
       ]
     },
     {
@@ -2331,31 +1467,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.496,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 50,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 11.0,
-          "velocity": 64,
-          "key_center": [
-            0.496,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 10.85,
-          "strike_time_sec": 11.0,
-          "hold_end_sec": 11.1,
-          "release_end_sec": 11.299999999999999
-        }
       ]
     },
     {
@@ -2385,31 +1502,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.636,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 11.25,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 11.1,
-          "strike_time_sec": 11.25,
-          "hold_end_sec": 11.35,
-          "release_end_sec": 11.549999999999999
-        }
       ]
     },
     {
@@ -2437,31 +1535,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 11.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 11.35,
-          "strike_time_sec": 11.5,
-          "hold_end_sec": 11.6,
-          "release_end_sec": 11.799999999999999
-        }
       ]
     },
     {
@@ -2489,31 +1568,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 11.75,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 11.6,
-          "strike_time_sec": 11.75,
-          "hold_end_sec": 11.85,
-          "release_end_sec": 12.049999999999999
-        }
       ]
     },
     {
@@ -2541,31 +1601,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 12.0,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 11.85,
-          "strike_time_sec": 12.0,
-          "hold_end_sec": 12.1,
-          "release_end_sec": 12.299999999999999
-        }
       ]
     },
     {
@@ -2593,31 +1634,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 12.0,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 11.85,
-          "strike_time_sec": 12.0,
-          "hold_end_sec": 12.1,
-          "release_end_sec": 12.299999999999999
-        }
       ]
     },
     {
@@ -2645,31 +1667,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 12.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 12.35,
-          "strike_time_sec": 12.5,
-          "hold_end_sec": 12.6,
-          "release_end_sec": 12.799999999999999
-        }
       ]
     },
     {
@@ -2697,31 +1700,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 12.75,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 12.6,
-          "strike_time_sec": 12.75,
-          "hold_end_sec": 12.85,
-          "release_end_sec": 13.049999999999999
-        }
       ]
     },
     {
@@ -2755,25 +1739,6 @@
         0.78,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 13.0,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 12.85,
-          "strike_time_sec": 13.0,
-          "hold_end_sec": 13.1,
-          "release_end_sec": 13.299999999999999
-        }
       ]
     },
     {
@@ -2801,31 +1766,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 13.0,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 12.85,
-          "strike_time_sec": 13.0,
-          "hold_end_sec": 13.1,
-          "release_end_sec": 13.299999999999999
-        }
       ]
     },
     {
@@ -2853,31 +1799,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 13.25,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 13.1,
-          "strike_time_sec": 13.25,
-          "hold_end_sec": 13.35,
-          "release_end_sec": 13.549999999999999
-        }
       ]
     },
     {
@@ -2905,31 +1832,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 13.5,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 13.35,
-          "strike_time_sec": 13.5,
-          "hold_end_sec": 13.6,
-          "release_end_sec": 13.799999999999999
-        }
       ]
     },
     {
@@ -2957,31 +1865,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 13.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 13.35,
-          "strike_time_sec": 13.5,
-          "hold_end_sec": 13.6,
-          "release_end_sec": 13.799999999999999
-        }
       ]
     },
     {
@@ -3009,31 +1898,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 14.0,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 13.85,
-          "strike_time_sec": 14.0,
-          "hold_end_sec": 14.1,
-          "release_end_sec": 14.299999999999999
-        }
       ]
     },
     {
@@ -3061,31 +1931,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 14.0,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 13.85,
-          "strike_time_sec": 14.0,
-          "hold_end_sec": 14.1,
-          "release_end_sec": 14.299999999999999
-        }
       ]
     },
     {
@@ -3113,31 +1964,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 14.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 14.35,
-          "strike_time_sec": 14.5,
-          "hold_end_sec": 14.6,
-          "release_end_sec": 14.799999999999999
-        }
       ]
     },
     {
@@ -3165,31 +1997,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 14.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 14.35,
-          "strike_time_sec": 14.5,
-          "hold_end_sec": 14.6,
-          "release_end_sec": 14.799999999999999
-        }
       ]
     },
     {
@@ -3232,48 +2045,12 @@
       ],
       "fingering": [
         1,
-        5
+        4
       ],
       "wrist_target": [
         0.636,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 15.0,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 14.85,
-          "strike_time_sec": 15.0,
-          "hold_end_sec": 15.1,
-          "release_end_sec": 15.299999999999999
-        },
-        {
-          "pitch": 76,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 15.0,
-          "velocity": 80,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 14.85,
-          "strike_time_sec": 15.0,
-          "hold_end_sec": 15.1,
-          "release_end_sec": 15.299999999999999
-        }
       ]
     },
     {
@@ -3303,31 +2080,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 15.5,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 15.35,
-          "strike_time_sec": 15.5,
-          "hold_end_sec": 15.6,
-          "release_end_sec": 15.799999999999999
-        }
       ]
     },
     {
@@ -3357,31 +2115,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 15.75,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 15.6,
-          "strike_time_sec": 15.75,
-          "hold_end_sec": 15.85,
-          "release_end_sec": 16.05
-        }
       ]
     },
     {
@@ -3417,25 +2156,6 @@
         0.8480000000000001,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 76,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 16.0,
-          "velocity": 80,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 15.85,
-          "strike_time_sec": 16.0,
-          "hold_end_sec": 16.1,
-          "release_end_sec": 16.3
-        }
       ]
     },
     {
@@ -3465,31 +2185,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.883,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 78,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 16.25,
-          "velocity": 80,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 16.1,
-          "strike_time_sec": 16.25,
-          "hold_end_sec": 16.35,
-          "release_end_sec": 16.55
-        }
       ]
     },
     {
@@ -3517,31 +2218,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.896,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 16.5,
-          "velocity": 80,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 16.35,
-          "strike_time_sec": 16.5,
-          "hold_end_sec": 16.6,
-          "release_end_sec": 16.8
-        }
       ]
     },
     {
@@ -3569,31 +2251,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 16.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 16.35,
-          "strike_time_sec": 16.5,
-          "hold_end_sec": 16.6,
-          "release_end_sec": 16.8
-        }
       ]
     },
     {
@@ -3636,48 +2299,12 @@
       ],
       "fingering": [
         1,
-        5
+        2
       ],
       "wrist_target": [
         0.636,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 17.0,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 16.85,
-          "strike_time_sec": 17.0,
-          "hold_end_sec": 17.1,
-          "release_end_sec": 17.3
-        },
-        {
-          "pitch": 67,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 17.0,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 16.85,
-          "strike_time_sec": 17.0,
-          "hold_end_sec": 17.1,
-          "release_end_sec": 17.3
-        }
       ]
     },
     {
@@ -3705,31 +2332,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 17.25,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 17.1,
-          "strike_time_sec": 17.25,
-          "hold_end_sec": 17.35,
-          "release_end_sec": 17.55
-        }
       ]
     },
     {
@@ -3757,31 +2365,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 17.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 17.35,
-          "strike_time_sec": 17.5,
-          "hold_end_sec": 17.6,
-          "release_end_sec": 17.8
-        }
       ]
     },
     {
@@ -3809,31 +2398,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 17.5,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 17.35,
-          "strike_time_sec": 17.5,
-          "hold_end_sec": 17.6,
-          "release_end_sec": 17.8
-        }
       ]
     },
     {
@@ -3861,31 +2431,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 17.75,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 17.6,
-          "strike_time_sec": 17.75,
-          "hold_end_sec": 17.85,
-          "release_end_sec": 18.05
-        }
       ]
     },
     {
@@ -3913,31 +2464,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 18.0,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 17.85,
-          "strike_time_sec": 18.0,
-          "hold_end_sec": 18.1,
-          "release_end_sec": 18.3
-        }
       ]
     },
     {
@@ -3971,25 +2503,6 @@
         0.592,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 18.0,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 17.85,
-          "strike_time_sec": 18.0,
-          "hold_end_sec": 18.1,
-          "release_end_sec": 18.3
-        }
       ]
     },
     {
@@ -4017,31 +2530,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 18.5,
-          "velocity": 80,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 18.35,
-          "strike_time_sec": 18.5,
-          "hold_end_sec": 18.6,
-          "release_end_sec": 18.8
-        }
       ]
     },
     {
@@ -4069,31 +2563,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 18.75,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 18.6,
-          "strike_time_sec": 18.75,
-          "hold_end_sec": 18.85,
-          "release_end_sec": 19.05
-        }
       ]
     },
     {
@@ -4121,31 +2596,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 19.0,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 18.85,
-          "strike_time_sec": 19.0,
-          "hold_end_sec": 19.1,
-          "release_end_sec": 19.3
-        }
       ]
     },
     {
@@ -4173,31 +2629,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.5549999999999999,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 54,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 19.0,
-          "velocity": 64,
-          "key_center": [
-            0.5549999999999999,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 18.85,
-          "strike_time_sec": 19.0,
-          "hold_end_sec": 19.1,
-          "release_end_sec": 19.3
-        }
       ]
     },
     {
@@ -4231,25 +2668,6 @@
         0.756,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 19.25,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 19.1,
-          "strike_time_sec": 19.25,
-          "hold_end_sec": 19.35,
-          "release_end_sec": 19.55
-        }
       ]
     },
     {
@@ -4277,31 +2695,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 19.5,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 19.35,
-          "strike_time_sec": 19.5,
-          "hold_end_sec": 19.6,
-          "release_end_sec": 19.8
-        }
       ]
     },
     {
@@ -4329,31 +2728,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 19.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 19.35,
-          "strike_time_sec": 19.5,
-          "hold_end_sec": 19.6,
-          "release_end_sec": 19.8
-        }
       ]
     },
     {
@@ -4381,31 +2761,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 20.0,
-          "velocity": 80,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 19.85,
-          "strike_time_sec": 20.0,
-          "hold_end_sec": 20.1,
-          "release_end_sec": 20.3
-        }
       ]
     },
     {
@@ -4433,31 +2794,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 20.25,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 20.1,
-          "strike_time_sec": 20.25,
-          "hold_end_sec": 20.35,
-          "release_end_sec": 20.55
-        }
       ]
     },
     {
@@ -4485,31 +2827,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 20.5,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 20.35,
-          "strike_time_sec": 20.5,
-          "hold_end_sec": 20.6,
-          "release_end_sec": 20.8
-        }
       ]
     },
     {
@@ -4537,31 +2860,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 20.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 20.35,
-          "strike_time_sec": 20.5,
-          "hold_end_sec": 20.6,
-          "release_end_sec": 20.8
-        }
       ]
     },
     {
@@ -4595,25 +2899,6 @@
         0.732,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 20.75,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 20.6,
-          "strike_time_sec": 20.75,
-          "hold_end_sec": 20.85,
-          "release_end_sec": 21.05
-        }
       ]
     },
     {
@@ -4656,48 +2941,12 @@
       ],
       "fingering": [
         1,
-        5
+        2
       ],
       "wrist_target": [
         0.636,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 21.0,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 20.85,
-          "strike_time_sec": 21.0,
-          "hold_end_sec": 21.1,
-          "release_end_sec": 21.3
-        },
-        {
-          "pitch": 69,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 21.0,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 20.85,
-          "strike_time_sec": 21.0,
-          "hold_end_sec": 21.1,
-          "release_end_sec": 21.3
-        }
       ]
     },
     {
@@ -4740,48 +2989,12 @@
       ],
       "fingering": [
         1,
-        5
+        2
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 21.5,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 21.35,
-          "strike_time_sec": 21.5,
-          "hold_end_sec": 21.6,
-          "release_end_sec": 21.8
-        },
-        {
-          "pitch": 71,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 21.5,
-          "velocity": 80,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 21.35,
-          "strike_time_sec": 21.5,
-          "hold_end_sec": 21.6,
-          "release_end_sec": 21.8
-        }
       ]
     },
     {
@@ -4811,31 +3024,12 @@
         }
       ],
       "fingering": [
-        4
+        3
       ],
       "wrist_target": [
         0.756,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 21.75,
-          "velocity": 80,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 21.6,
-          "strike_time_sec": 21.75,
-          "hold_end_sec": 21.85,
-          "release_end_sec": 22.05
-        }
       ]
     },
     {
@@ -4869,25 +3063,6 @@
         0.732,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 22.0,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 21.85,
-          "strike_time_sec": 22.0,
-          "hold_end_sec": 22.1,
-          "release_end_sec": 22.3
-        }
       ]
     },
     {
@@ -4915,31 +3090,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.496,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 50,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 22.0,
-          "velocity": 64,
-          "key_center": [
-            0.496,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 21.85,
-          "strike_time_sec": 22.0,
-          "hold_end_sec": 22.1,
-          "release_end_sec": 22.3
-        }
       ]
     },
     {
@@ -4967,31 +3123,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.719,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 66,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 22.25,
-          "velocity": 80,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 22.1,
-          "strike_time_sec": 22.25,
-          "hold_end_sec": 22.35,
-          "release_end_sec": 22.55
-        }
       ]
     },
     {
@@ -5019,31 +3156,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 22.5,
-          "velocity": 80,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 22.35,
-          "strike_time_sec": 22.5,
-          "hold_end_sec": 22.6,
-          "release_end_sec": 22.8
-        }
       ]
     },
     {
@@ -5071,31 +3189,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 22.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 22.35,
-          "strike_time_sec": 22.5,
-          "hold_end_sec": 22.6,
-          "release_end_sec": 22.8
-        }
       ]
     },
     {
@@ -5123,31 +3222,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.404,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 43,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 23.5,
-          "velocity": 64,
-          "key_center": [
-            0.404,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 23.35,
-          "strike_time_sec": 23.5,
-          "hold_end_sec": 23.6,
-          "release_end_sec": 23.8
-        }
       ]
     },
     {
@@ -5175,31 +3255,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.9440000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 83,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 24.0,
-          "velocity": 97,
-          "key_center": [
-            0.9440000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 23.85,
-          "strike_time_sec": 24.0,
-          "hold_end_sec": 24.1,
-          "release_end_sec": 24.3
-        }
       ]
     },
     {
@@ -5227,31 +3288,12 @@
         }
       ],
       "fingering": [
-        4
+        2
       ],
       "wrist_target": [
         0.568,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 24.0,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 23.85,
-          "strike_time_sec": 24.0,
-          "hold_end_sec": 24.1,
-          "release_end_sec": 24.3
-        }
       ]
     },
     {
@@ -5279,31 +3321,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.896,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 24.5,
-          "velocity": 97,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 24.35,
-          "strike_time_sec": 24.5,
-          "hold_end_sec": 24.6,
-          "release_end_sec": 24.8
-        }
       ]
     },
     {
@@ -5331,31 +3354,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.92,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 81,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 24.75,
-          "velocity": 97,
-          "key_center": [
-            0.92,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 24.6,
-          "strike_time_sec": 24.75,
-          "hold_end_sec": 24.85,
-          "release_end_sec": 25.05
-        }
       ]
     },
     {
@@ -5383,31 +3387,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.9440000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 83,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 25.0,
-          "velocity": 97,
-          "key_center": [
-            0.9440000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 24.85,
-          "strike_time_sec": 25.0,
-          "hold_end_sec": 25.1,
-          "release_end_sec": 25.3
-        }
       ]
     },
     {
@@ -5435,31 +3420,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.896,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 25.25,
-          "velocity": 97,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 25.1,
-          "strike_time_sec": 25.25,
-          "hold_end_sec": 25.35,
-          "release_end_sec": 25.55
-        }
       ]
     },
     {
@@ -5487,31 +3453,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.92,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 81,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 25.5,
-          "velocity": 97,
-          "key_center": [
-            0.92,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 25.35,
-          "strike_time_sec": 25.5,
-          "hold_end_sec": 25.6,
-          "release_end_sec": 25.8
-        }
       ]
     },
     {
@@ -5539,31 +3486,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.5549999999999999,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 54,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 25.5,
-          "velocity": 64,
-          "key_center": [
-            0.5549999999999999,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 25.35,
-          "strike_time_sec": 25.5,
-          "hold_end_sec": 25.6,
-          "release_end_sec": 25.8
-        }
       ]
     },
     {
@@ -5591,31 +3519,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 26.0,
-          "velocity": 97,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 25.85,
-          "strike_time_sec": 26.0,
-          "hold_end_sec": 26.1,
-          "release_end_sec": 26.3
-        }
       ]
     },
     {
@@ -5643,31 +3552,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8480000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 76,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 26.25,
-          "velocity": 97,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 26.1,
-          "strike_time_sec": 26.25,
-          "hold_end_sec": 26.35,
-          "release_end_sec": 26.55
-        }
       ]
     },
     {
@@ -5695,31 +3585,12 @@
         }
       ],
       "fingering": [
-        4
+        2
       ],
       "wrist_target": [
         0.883,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 78,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 26.5,
-          "velocity": 97,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 26.35,
-          "strike_time_sec": 26.5,
-          "hold_end_sec": 26.6,
-          "release_end_sec": 26.8
-        }
       ]
     },
     {
@@ -5747,31 +3618,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 26.75,
-          "velocity": 97,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 26.6,
-          "strike_time_sec": 26.75,
-          "hold_end_sec": 26.85,
-          "release_end_sec": 27.05
-        }
       ]
     },
     {
@@ -5799,31 +3651,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.896,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 27.0,
-          "velocity": 97,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 26.85,
-          "strike_time_sec": 27.0,
-          "hold_end_sec": 27.1,
-          "release_end_sec": 27.3
-        }
       ]
     },
     {
@@ -5851,31 +3684,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.52,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 52,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 27.0,
-          "velocity": 64,
-          "key_center": [
-            0.52,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 26.85,
-          "strike_time_sec": 27.0,
-          "hold_end_sec": 27.1,
-          "release_end_sec": 27.3
-        }
       ]
     },
     {
@@ -5903,31 +3717,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8480000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 76,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 27.5,
-          "velocity": 97,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 27.35,
-          "strike_time_sec": 27.5,
-          "hold_end_sec": 27.6,
-          "release_end_sec": 27.8
-        }
       ]
     },
     {
@@ -5955,31 +3750,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 27.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 27.35,
-          "strike_time_sec": 27.5,
-          "hold_end_sec": 27.6,
-          "release_end_sec": 27.8
-        }
       ]
     },
     {
@@ -6007,31 +3783,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.883,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 78,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 27.75,
-          "velocity": 97,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 27.6,
-          "strike_time_sec": 27.75,
-          "hold_end_sec": 27.85,
-          "release_end_sec": 28.05
-        }
       ]
     },
     {
@@ -6059,31 +3816,12 @@
         }
       ],
       "fingering": [
-        4
+        2
       ],
       "wrist_target": [
         0.896,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 28.0,
-          "velocity": 97,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 27.85,
-          "strike_time_sec": 28.0,
-          "hold_end_sec": 28.1,
-          "release_end_sec": 28.3
-        }
       ]
     },
     {
@@ -6111,31 +3849,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.52,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 52,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 28.0,
-          "velocity": 64,
-          "key_center": [
-            0.52,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 27.85,
-          "strike_time_sec": 28.0,
-          "hold_end_sec": 28.1,
-          "release_end_sec": 28.3
-        }
       ]
     },
     {
@@ -6163,31 +3882,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.8240000000000001,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 28.25,
-          "velocity": 97,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 28.1,
-          "strike_time_sec": 28.25,
-          "hold_end_sec": 28.35,
-          "release_end_sec": 28.55
-        }
       ]
     },
     {
@@ -6221,25 +3921,6 @@
         0.8140000000000001,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 73,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 28.5,
-          "velocity": 97,
-          "key_center": [
-            0.8140000000000001,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 28.35,
-          "strike_time_sec": 28.5,
-          "hold_end_sec": 28.6,
-          "release_end_sec": 28.8
-        }
       ]
     },
     {
@@ -6267,31 +3948,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 28.5,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 28.35,
-          "strike_time_sec": 28.5,
-          "hold_end_sec": 28.6,
-          "release_end_sec": 28.8
-        }
       ]
     },
     {
@@ -6325,25 +3987,6 @@
         0.78,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 29.0,
-          "velocity": 97,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 28.85,
-          "strike_time_sec": 29.0,
-          "hold_end_sec": 29.1,
-          "release_end_sec": 29.3
-        }
       ]
     },
     {
@@ -6371,31 +4014,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.8140000000000001,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 73,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 29.25,
-          "velocity": 97,
-          "key_center": [
-            0.8140000000000001,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 29.1,
-          "strike_time_sec": 29.25,
-          "hold_end_sec": 29.35,
-          "release_end_sec": 29.55
-        }
       ]
     },
     {
@@ -6423,31 +4047,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 29.5,
-          "velocity": 97,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 29.35,
-          "strike_time_sec": 29.5,
-          "hold_end_sec": 29.6,
-          "release_end_sec": 29.8
-        }
       ]
     },
     {
@@ -6475,31 +4080,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.428,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 45,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 29.5,
-          "velocity": 64,
-          "key_center": [
-            0.428,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 29.35,
-          "strike_time_sec": 29.5,
-          "hold_end_sec": 29.6,
-          "release_end_sec": 29.8
-        }
       ]
     },
     {
@@ -6527,31 +4113,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 30.0,
-          "velocity": 97,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 29.85,
-          "strike_time_sec": 30.0,
-          "hold_end_sec": 30.1,
-          "release_end_sec": 30.3
-        }
       ]
     },
     {
@@ -6579,31 +4146,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 30.0,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 29.85,
-          "strike_time_sec": 30.0,
-          "hold_end_sec": 30.1,
-          "release_end_sec": 30.3
-        }
       ]
     },
     {
@@ -6631,31 +4179,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 30.25,
-          "velocity": 97,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 30.1,
-          "strike_time_sec": 30.25,
-          "hold_end_sec": 30.35,
-          "release_end_sec": 30.55
-        }
       ]
     },
     {
@@ -6683,31 +4212,12 @@
         }
       ],
       "fingering": [
-        4
+        3
       ],
       "wrist_target": [
         0.8140000000000001,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 73,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 30.5,
-          "velocity": 97,
-          "key_center": [
-            0.8140000000000001,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 30.35,
-          "strike_time_sec": 30.5,
-          "hold_end_sec": 30.6,
-          "release_end_sec": 30.8
-        }
       ]
     },
     {
@@ -6741,25 +4251,6 @@
         0.8240000000000001,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 30.75,
-          "velocity": 97,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 30.6,
-          "strike_time_sec": 30.75,
-          "hold_end_sec": 30.85,
-          "release_end_sec": 31.05
-        }
       ]
     },
     {
@@ -6787,31 +4278,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.8480000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 76,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 31.0,
-          "velocity": 97,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 30.85,
-          "strike_time_sec": 31.0,
-          "hold_end_sec": 31.1,
-          "release_end_sec": 31.3
-        }
       ]
     },
     {
@@ -6845,25 +4317,6 @@
         0.883,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 78,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 31.25,
-          "velocity": 97,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 31.1,
-          "strike_time_sec": 31.25,
-          "hold_end_sec": 31.35,
-          "release_end_sec": 31.55
-        }
       ]
     },
     {
@@ -6891,31 +4344,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.896,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 79,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 31.5,
-          "velocity": 97,
-          "key_center": [
-            0.896,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 31.35,
-          "strike_time_sec": 31.5,
-          "hold_end_sec": 31.6,
-          "release_end_sec": 31.8
-        }
       ]
     },
     {
@@ -6943,31 +4377,12 @@
         }
       ],
       "fingering": [
-        4
+        3
       ],
       "wrist_target": [
         0.616,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 31.5,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 31.35,
-          "strike_time_sec": 31.5,
-          "hold_end_sec": 31.6,
-          "release_end_sec": 31.8
-        }
       ]
     },
     {
@@ -7010,48 +4425,12 @@
       ],
       "fingering": [
         1,
-        5
+        4
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 32.0,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 31.85,
-          "strike_time_sec": 32.0,
-          "hold_end_sec": 32.1,
-          "release_end_sec": 32.300000000000004
-        },
-        {
-          "pitch": 78,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 32.0,
-          "velocity": 97,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 31.85,
-          "strike_time_sec": 32.0,
-          "hold_end_sec": 32.1,
-          "release_end_sec": 32.300000000000004
-        }
       ]
     },
     {
@@ -7094,48 +4473,12 @@
       ],
       "fingering": [
         1,
-        5
+        4
       ],
       "wrist_target": [
         0.65,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 61,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 32.5,
-          "velocity": 64,
-          "key_center": [
-            0.65,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 32.35,
-          "strike_time_sec": 32.5,
-          "hold_end_sec": 32.6,
-          "release_end_sec": 32.800000000000004
-        },
-        {
-          "pitch": 76,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 32.5,
-          "velocity": 97,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 32.35,
-          "strike_time_sec": 32.5,
-          "hold_end_sec": 32.6,
-          "release_end_sec": 32.800000000000004
-        }
       ]
     },
     {
@@ -7178,48 +4521,12 @@
       ],
       "fingering": [
         1,
-        5
+        4
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 33.0,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 32.85,
-          "strike_time_sec": 33.0,
-          "hold_end_sec": 33.1,
-          "release_end_sec": 33.300000000000004
-        },
-        {
-          "pitch": 78,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 33.0,
-          "velocity": 97,
-          "key_center": [
-            0.883,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 32.85,
-          "strike_time_sec": 33.0,
-          "hold_end_sec": 33.1,
-          "release_end_sec": 33.300000000000004
-        }
       ]
     },
     {
@@ -7247,31 +4554,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 33.5,
-          "velocity": 97,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 33.35,
-          "strike_time_sec": 33.5,
-          "hold_end_sec": 33.6,
-          "release_end_sec": 33.800000000000004
-        }
       ]
     },
     {
@@ -7299,31 +4587,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.5549999999999999,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 54,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 33.5,
-          "velocity": 64,
-          "key_center": [
-            0.5549999999999999,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 33.35,
-          "strike_time_sec": 33.5,
-          "hold_end_sec": 33.6,
-          "release_end_sec": 33.800000000000004
-        }
       ]
     },
     {
@@ -7351,31 +4620,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.8140000000000001,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 73,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 34.0,
-          "velocity": 97,
-          "key_center": [
-            0.8140000000000001,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 33.85,
-          "strike_time_sec": 34.0,
-          "hold_end_sec": 34.1,
-          "release_end_sec": 34.300000000000004
-        }
       ]
     },
     {
@@ -7403,31 +4653,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 34.0,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 33.85,
-          "strike_time_sec": 34.0,
-          "hold_end_sec": 34.1,
-          "release_end_sec": 34.300000000000004
-        }
       ]
     },
     {
@@ -7470,48 +4701,12 @@
       ],
       "fingering": [
         1,
-        5
+        3
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 34.5,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 34.35,
-          "strike_time_sec": 34.5,
-          "hold_end_sec": 34.6,
-          "release_end_sec": 34.800000000000004
-        },
-        {
-          "pitch": 74,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 34.5,
-          "velocity": 97,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 34.35,
-          "strike_time_sec": 34.5,
-          "hold_end_sec": 34.6,
-          "release_end_sec": 34.800000000000004
-        }
       ]
     },
     {
@@ -7539,31 +4734,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.496,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 50,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 35.0,
-          "velocity": 64,
-          "key_center": [
-            0.496,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 34.85,
-          "strike_time_sec": 35.0,
-          "hold_end_sec": 35.1,
-          "release_end_sec": 35.300000000000004
-        }
       ]
     },
     {
@@ -7593,31 +4769,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.636,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 35.5,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 35.35,
-          "strike_time_sec": 35.5,
-          "hold_end_sec": 35.6,
-          "release_end_sec": 35.800000000000004
-        }
       ]
     },
     {
@@ -7645,31 +4802,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 36.0,
-          "velocity": 49,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 35.85,
-          "strike_time_sec": 36.0,
-          "hold_end_sec": 36.1,
-          "release_end_sec": 36.300000000000004
-        }
       ]
     },
     {
@@ -7697,31 +4835,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 36.0,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 35.85,
-          "strike_time_sec": 36.0,
-          "hold_end_sec": 36.1,
-          "release_end_sec": 36.300000000000004
-        }
       ]
     },
     {
@@ -7763,49 +4882,13 @@
         }
       ],
       "fingering": [
-        2,
-        4
+        1,
+        2
       ],
       "wrist_target": [
         0.66,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 36.5,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 36.35,
-          "strike_time_sec": 36.5,
-          "hold_end_sec": 36.6,
-          "release_end_sec": 36.800000000000004
-        },
-        {
-          "pitch": 67,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 36.5,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 36.35,
-          "strike_time_sec": 36.5,
-          "hold_end_sec": 36.6,
-          "release_end_sec": 36.800000000000004
-        }
       ]
     },
     {
@@ -7835,31 +4918,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.719,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 66,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 36.75,
-          "velocity": 49,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 36.6,
-          "strike_time_sec": 36.75,
-          "hold_end_sec": 36.85,
-          "release_end_sec": 37.050000000000004
-        }
       ]
     },
     {
@@ -7889,31 +4953,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 37.0,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 36.85,
-          "strike_time_sec": 37.0,
-          "hold_end_sec": 37.1,
-          "release_end_sec": 37.300000000000004
-        }
       ]
     },
     {
@@ -7941,31 +4986,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 37.0,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 36.85,
-          "strike_time_sec": 37.0,
-          "hold_end_sec": 37.1,
-          "release_end_sec": 37.300000000000004
-        }
       ]
     },
     {
@@ -8008,48 +5034,12 @@
       ],
       "fingering": [
         1,
-        5
+        4
       ],
       "wrist_target": [
         0.636,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 37.5,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 37.35,
-          "strike_time_sec": 37.5,
-          "hold_end_sec": 37.6,
-          "release_end_sec": 37.800000000000004
-        },
-        {
-          "pitch": 76,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 37.5,
-          "velocity": 49,
-          "key_center": [
-            0.8480000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 37.35,
-          "strike_time_sec": 37.5,
-          "hold_end_sec": 37.6,
-          "release_end_sec": 37.800000000000004
-        }
       ]
     },
     {
@@ -8093,49 +5083,13 @@
         }
       ],
       "fingering": [
-        2,
-        4
+        1,
+        2
       ],
       "wrist_target": [
         0.684,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 64,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 38.0,
-          "velocity": 64,
-          "key_center": [
-            0.684,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 37.85,
-          "strike_time_sec": 38.0,
-          "hold_end_sec": 38.1,
-          "release_end_sec": 38.300000000000004
-        },
-        {
-          "pitch": 67,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 38.0,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 37.85,
-          "strike_time_sec": 38.0,
-          "hold_end_sec": 38.1,
-          "release_end_sec": 38.300000000000004
-        }
       ]
     },
     {
@@ -8172,25 +5126,6 @@
         0.719,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 66,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 38.25,
-          "velocity": 49,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 38.1,
-          "strike_time_sec": 38.25,
-          "hold_end_sec": 38.35,
-          "release_end_sec": 38.550000000000004
-        }
       ]
     },
     {
@@ -8235,48 +5170,12 @@
       ],
       "fingering": [
         1,
-        5
+        2
       ],
       "wrist_target": [
         0.636,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 60,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 38.5,
-          "velocity": 64,
-          "key_center": [
-            0.636,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 38.35,
-          "strike_time_sec": 38.5,
-          "hold_end_sec": 38.6,
-          "release_end_sec": 38.800000000000004
-        },
-        {
-          "pitch": 67,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 38.5,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 38.35,
-          "strike_time_sec": 38.5,
-          "hold_end_sec": 38.6,
-          "release_end_sec": 38.800000000000004
-        }
       ]
     },
     {
@@ -8304,31 +5203,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.8240000000000001,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 39.0,
-          "velocity": 49,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 38.85,
-          "strike_time_sec": 39.0,
-          "hold_end_sec": 39.1,
-          "release_end_sec": 39.300000000000004
-        }
       ]
     },
     {
@@ -8356,31 +5236,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.616,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 39.0,
-          "velocity": 64,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 38.85,
-          "strike_time_sec": 39.0,
-          "hold_end_sec": 39.1,
-          "release_end_sec": 39.300000000000004
-        }
       ]
     },
     {
@@ -8408,31 +5269,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 39.5,
-          "velocity": 49,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 39.35,
-          "strike_time_sec": 39.5,
-          "hold_end_sec": 39.6,
-          "release_end_sec": 39.800000000000004
-        }
       ]
     },
     {
@@ -8460,31 +5302,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.592,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 57,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 39.5,
-          "velocity": 64,
-          "key_center": [
-            0.592,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 39.35,
-          "strike_time_sec": 39.5,
-          "hold_end_sec": 39.6,
-          "release_end_sec": 39.800000000000004
-        }
       ]
     },
     {
@@ -8512,31 +5335,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 40.0,
-          "velocity": 49,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 39.85,
-          "strike_time_sec": 40.0,
-          "hold_end_sec": 40.1,
-          "release_end_sec": 40.300000000000004
-        }
       ]
     },
     {
@@ -8564,31 +5368,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 40.0,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 39.85,
-          "strike_time_sec": 40.0,
-          "hold_end_sec": 40.1,
-          "release_end_sec": 40.300000000000004
-        }
       ]
     },
     {
@@ -8631,48 +5416,12 @@
       ],
       "fingering": [
         1,
-        5
+        2
       ],
       "wrist_target": [
         0.66,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 40.5,
-          "velocity": 64,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 40.35,
-          "strike_time_sec": 40.5,
-          "hold_end_sec": 40.6,
-          "release_end_sec": 40.800000000000004
-        },
-        {
-          "pitch": 69,
-          "finger": 5,
-          "staff": 1,
-          "onset_sec": 40.5,
-          "velocity": 49,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 40.35,
-          "strike_time_sec": 40.5,
-          "hold_end_sec": 40.6,
-          "release_end_sec": 40.800000000000004
-        }
       ]
     },
     {
@@ -8708,25 +5457,6 @@
         0.732,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 40.75,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 40.6,
-          "strike_time_sec": 40.75,
-          "hold_end_sec": 40.85,
-          "release_end_sec": 41.050000000000004
-        }
       ]
     },
     {
@@ -8756,31 +5486,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.719,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 66,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 41.0,
-          "velocity": 49,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 40.85,
-          "strike_time_sec": 41.0,
-          "hold_end_sec": 41.1,
-          "release_end_sec": 41.300000000000004
-        }
       ]
     },
     {
@@ -8810,31 +5521,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.732,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 41.25,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 41.1,
-          "strike_time_sec": 41.25,
-          "hold_end_sec": 41.35,
-          "release_end_sec": 41.550000000000004
-        }
       ]
     },
     {
@@ -8862,31 +5554,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 41.5,
-          "velocity": 49,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 41.35,
-          "strike_time_sec": 41.5,
-          "hold_end_sec": 41.6,
-          "release_end_sec": 41.800000000000004
-        }
       ]
     },
     {
@@ -8914,31 +5587,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.66,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 42.0,
-          "velocity": 49,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 41.85,
-          "strike_time_sec": 42.0,
-          "hold_end_sec": 42.1,
-          "release_end_sec": 42.300000000000004
-        }
       ]
     },
     {
@@ -8972,25 +5626,6 @@
         0.496,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 50,
-          "finger": 1,
-          "staff": 2,
-          "onset_sec": 42.0,
-          "velocity": 64,
-          "key_center": [
-            0.496,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 41.85,
-          "strike_time_sec": 42.0,
-          "hold_end_sec": 42.1,
-          "release_end_sec": 42.300000000000004
-        }
       ]
     },
     {
@@ -9018,31 +5653,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.684,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 64,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 42.25,
-          "velocity": 49,
-          "key_center": [
-            0.684,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 42.1,
-          "strike_time_sec": 42.25,
-          "hold_end_sec": 42.35,
-          "release_end_sec": 42.550000000000004
-        }
       ]
     },
     {
@@ -9070,31 +5686,12 @@
         }
       ],
       "fingering": [
-        4
+        3
       ],
       "wrist_target": [
         0.719,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 66,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 42.5,
-          "velocity": 49,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 42.35,
-          "strike_time_sec": 42.5,
-          "hold_end_sec": 42.6,
-          "release_end_sec": 42.800000000000004
-        }
       ]
     },
     {
@@ -9128,25 +5725,6 @@
         0.732,
         -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 1,
-          "staff": 1,
-          "onset_sec": 42.75,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 42.6,
-          "strike_time_sec": 42.75,
-          "hold_end_sec": 42.85,
-          "release_end_sec": 43.050000000000004
-        }
       ]
     },
     {
@@ -9174,31 +5752,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 43.0,
-          "velocity": 49,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 42.85,
-          "strike_time_sec": 43.0,
-          "hold_end_sec": 43.1,
-          "release_end_sec": 43.300000000000004
-        }
       ]
     },
     {
@@ -9228,31 +5787,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.5549999999999999,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 54,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 43.0,
-          "velocity": 64,
-          "key_center": [
-            0.5549999999999999,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 42.85,
-          "strike_time_sec": 43.0,
-          "hold_end_sec": 43.1,
-          "release_end_sec": 43.300000000000004
-        }
       ]
     },
     {
@@ -9280,31 +5820,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 43.25,
-          "velocity": 49,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 43.1,
-          "strike_time_sec": 43.25,
-          "hold_end_sec": 43.35,
-          "release_end_sec": 43.550000000000004
-        }
       ]
     },
     {
@@ -9332,31 +5853,12 @@
         }
       ],
       "fingering": [
-        4
+        1
       ],
       "wrist_target": [
         0.8,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 72,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 43.5,
-          "velocity": 49,
-          "key_center": [
-            0.8,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 43.35,
-          "strike_time_sec": 43.5,
-          "hold_end_sec": 43.6,
-          "release_end_sec": 43.800000000000004
-        }
       ]
     },
     {
@@ -9384,31 +5886,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.52,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 52,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 43.5,
-          "velocity": 64,
-          "key_center": [
-            0.52,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 43.35,
-          "strike_time_sec": 43.5,
-          "hold_end_sec": 43.6,
-          "release_end_sec": 43.800000000000004
-        }
       ]
     },
     {
@@ -9436,31 +5919,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 44.0,
-          "velocity": 49,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 43.85,
-          "strike_time_sec": 44.0,
-          "hold_end_sec": 44.1,
-          "release_end_sec": 44.300000000000004
-        }
       ]
     },
     {
@@ -9494,25 +5958,6 @@
         0.568,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 44.0,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 43.85,
-          "strike_time_sec": 44.0,
-          "hold_end_sec": 44.1,
-          "release_end_sec": 44.300000000000004
-        }
       ]
     },
     {
@@ -9540,31 +5985,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.756,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 69,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 44.5,
-          "velocity": 49,
-          "key_center": [
-            0.756,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 44.35,
-          "strike_time_sec": 44.5,
-          "hold_end_sec": 44.6,
-          "release_end_sec": 44.800000000000004
-        }
       ]
     },
     {
@@ -9592,31 +6018,12 @@
         }
       ],
       "fingering": [
-        2
+        3
       ],
       "wrist_target": [
         0.5549999999999999,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 54,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 44.5,
-          "velocity": 64,
-          "key_center": [
-            0.5549999999999999,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 44.35,
-          "strike_time_sec": 44.5,
-          "hold_end_sec": 44.6,
-          "release_end_sec": 44.800000000000004
-        }
       ]
     },
     {
@@ -9644,31 +6051,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.78,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 71,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 45.0,
-          "velocity": 49,
-          "key_center": [
-            0.78,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 44.85,
-          "strike_time_sec": 45.0,
-          "hold_end_sec": 45.1,
-          "release_end_sec": 45.300000000000004
-        }
       ]
     },
     {
@@ -9696,31 +6084,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 45.0,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 44.85,
-          "strike_time_sec": 45.0,
-          "hold_end_sec": 45.1,
-          "release_end_sec": 45.300000000000004
-        }
       ]
     },
     {
@@ -9748,31 +6117,12 @@
         }
       ],
       "fingering": [
-        4
+        2
       ],
       "wrist_target": [
         0.8240000000000001,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 74,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 45.25,
-          "velocity": 49,
-          "key_center": [
-            0.8240000000000001,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 45.1,
-          "strike_time_sec": 45.25,
-          "hold_end_sec": 45.35,
-          "release_end_sec": 45.550000000000004
-        }
       ]
     },
     {
@@ -9800,31 +6150,12 @@
         }
       ],
       "fingering": [
-        3
+        2
       ],
       "wrist_target": [
         0.732,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 67,
-          "finger": 3,
-          "staff": 1,
-          "onset_sec": 45.5,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 45.35,
-          "strike_time_sec": 45.5,
-          "hold_end_sec": 45.6,
-          "release_end_sec": 45.800000000000004
-        }
       ]
     },
     {
@@ -9852,31 +6183,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.45199999999999996,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 47,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 45.5,
-          "velocity": 64,
-          "key_center": [
-            0.45199999999999996,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 45.35,
-          "strike_time_sec": 45.5,
-          "hold_end_sec": 45.6,
-          "release_end_sec": 45.800000000000004
-        }
       ]
     },
     {
@@ -9910,25 +6222,6 @@
         0.719,
         -0.22,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 66,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 46.0,
-          "velocity": 49,
-          "key_center": [
-            0.719,
-            -0.05,
-            0.02
-          ],
-          "is_black": true,
-          "pretouch_start_sec": 45.85,
-          "strike_time_sec": 46.0,
-          "hold_end_sec": 46.1,
-          "release_end_sec": 46.300000000000004
-        }
       ]
     },
     {
@@ -9956,31 +6249,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.496,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 50,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 46.0,
-          "velocity": 64,
-          "key_center": [
-            0.496,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 45.85,
-          "strike_time_sec": 46.0,
-          "hold_end_sec": 46.1,
-          "release_end_sec": 46.300000000000004
-        }
       ]
     },
     {
@@ -10022,49 +6296,13 @@
         }
       ],
       "fingering": [
-        2,
-        4
+        1,
+        2
       ],
       "wrist_target": [
         0.66,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 62,
-          "finger": 2,
-          "staff": 1,
-          "onset_sec": 46.5,
-          "velocity": 49,
-          "key_center": [
-            0.66,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 46.35,
-          "strike_time_sec": 46.5,
-          "hold_end_sec": 46.6,
-          "release_end_sec": 46.800000000000004
-        },
-        {
-          "pitch": 67,
-          "finger": 4,
-          "staff": 1,
-          "onset_sec": 46.5,
-          "velocity": 49,
-          "key_center": [
-            0.732,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 46.35,
-          "strike_time_sec": 46.5,
-          "hold_end_sec": 46.6,
-          "release_end_sec": 46.800000000000004
-        }
       ]
     },
     {
@@ -10106,49 +6344,13 @@
         }
       ],
       "fingering": [
-        2,
-        4
+        1,
+        2
       ],
       "wrist_target": [
         0.568,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 55,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 46.5,
-          "velocity": 64,
-          "key_center": [
-            0.568,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 46.35,
-          "strike_time_sec": 46.5,
-          "hold_end_sec": 46.6,
-          "release_end_sec": 46.800000000000004
-        },
-        {
-          "pitch": 59,
-          "finger": 4,
-          "staff": 2,
-          "onset_sec": 46.5,
-          "velocity": 49,
-          "key_center": [
-            0.616,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 46.35,
-          "strike_time_sec": 46.5,
-          "hold_end_sec": 46.6,
-          "release_end_sec": 46.800000000000004
-        }
       ]
     },
     {
@@ -10178,31 +6380,12 @@
         }
       ],
       "fingering": [
-        3
+        1
       ],
       "wrist_target": [
         0.496,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 50,
-          "finger": 3,
-          "staff": 2,
-          "onset_sec": 47.0,
-          "velocity": 64,
-          "key_center": [
-            0.496,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 46.85,
-          "strike_time_sec": 47.0,
-          "hold_end_sec": 47.1,
-          "release_end_sec": 47.300000000000004
-        }
       ]
     },
     {
@@ -10232,31 +6415,12 @@
         }
       ],
       "fingering": [
-        2
+        1
       ],
       "wrist_target": [
         0.404,
-        -0.22,
+        -0.18,
         0.12
-      ],
-      "contacts": [
-        {
-          "pitch": 43,
-          "finger": 2,
-          "staff": 2,
-          "onset_sec": 47.5,
-          "velocity": 64,
-          "key_center": [
-            0.404,
-            -0.1,
-            0.0
-          ],
-          "is_black": false,
-          "pretouch_start_sec": 47.35,
-          "strike_time_sec": 47.5,
-          "hold_end_sec": 47.6,
-          "release_end_sec": 47.800000000000004
-        }
       ]
     }
   ]
