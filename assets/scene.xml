@@ -1,32 +1,58 @@
-<mujoco model="chord_v5_paper_ready">
+<mujoco model="chord_v9_final">
     <include file="piano.xml"/>
     
-    <option timestep="0.002" integrator="implicitfast" iterations="50" gravity="0 0 -9.81" solver="Newton"/>
+    <!--
+      STABILITY FIX:
+      'implicitfast' is robust for contact-rich environments.
+      timestep=1ms matches Layer A QP frequency (1 kHz).
+    -->
+    <option timestep="0.001" integrator="implicitfast" iterations="50" gravity="0 0 -9.81" solver="Newton"/>
 
     <visual>
         <global offwidth="1920" offheight="1080"/>
-        <headlight active="1" ambient="0.3 0.3 0.3" diffuse="0.6 0.6 0.6"/>
+        <headlight active="1" ambient="0.4 0.4 0.4" diffuse="0.5 0.5 0.5"/>
         <rgba haze="0.15 0.25 0.35 1"/>
         <quality shadowsize="4096"/>
     </visual>
 
     <default>
         <default class="robot">
-            <geom material="mat_robot" condim="4" friction="1.0 0.05 0.001"/> 
-            <joint damping="0.5" armature="0.01" frictionloss="0.1"/>
+            <geom material="mat_robot" condim="3" friction="1.0 0.1 0.1"/> 
+            <joint damping="5.0" armature="0.5" frictionloss="0.5"/>
         </default>
+        
         <default class="gantry">
-            <joint damping="100" armature="1.0"/>
+            <joint damping="100" armature="5.0" limited="true"/>
+            <position kp="3000" forcerange="-2000 2000"/> 
         </default>
+        
         <default class="finger">
-            <geom type="capsule" size="0.009" rgba="0.2 0.2 0.2 1" contype="1" conaffinity="0"/> 
-            <joint damping="0.05" armature="0.005" stiffness="0.5" limited="true"/>
+            <!--
+               CRITICAL FIX:
+               contype="0" conaffinity="0" -> No collisions for finger links.
+               Mass decreased to represent lightweight carbon/plastic.
+               Increased damping (0.5) and armature (0.05) for stability.
+            -->
+            <geom type="capsule" size="0.006" rgba="0.2 0.2 0.2 1" contype="0" conaffinity="0" mass="0.02"/>
+            <joint damping="0.5" armature="0.05" stiffness="0.5" limited="true"/>
+            <position kp="50" forcerange="-15 15"/>
         </default>
+        
         <default class="fingertip">
-            <geom type="sphere" size="0.0085" rgba="0.8 0.2 0.2 1" 
-                  contype="1" conaffinity="1" 
-                  friction="1.5 0.005 0.0001" solimp="0.95 0.99 0.001" solref="0.005 1"/>
-            <site type="sphere" size="0.005" rgba="0 1 0 0.5"/>
+            <!-- 
+               CRITICAL FIX: Collision Masking
+               contype="1":   I am a solid object (Layer 1).
+               conaffinity="0": I do not collide with other Layer 1 objects (other tips).
+               
+               Piano Keys (default) are contype=1, conaffinity=1.
+               Result: 
+                 Tip <-> Tip: (1&0) | (1&0) = 0 (NO COLLISION)
+                 Tip <-> Key: (1&1) | (1&0) = 1 (COLLISION)
+            -->
+            <geom type="sphere" size="0.006" rgba="0.8 0.2 0.2 1" 
+                  contype="1" conaffinity="0" 
+                  friction="1.5 0.01 0.001" solimp="0.95 0.99 0.001" solref="0.005 1"/>
+            <site type="sphere" size="0.004" rgba="0 1 0 0.5"/>
         </default>
     </default>
 
@@ -41,41 +67,40 @@
         <light pos="0.5 -0.5 2" dir="0 0 -1" castshadow="true" diffuse="0.8 0.8 0.8"/>
         <geom name="floor" pos="0 0 -1.0" size="2 2 0.1" type="plane" material="matplane"/>
         
+        <!-- GANTRY BASE -->
         <body name="gantry_x" pos="0 0 0">
-            <inertial pos="0 0 0" mass="10" diaginertia="1 1 1"/>
-            <joint name="tx" type="slide" axis="1 0 0" class="gantry"/>
+            <inertial pos="0 0 0" mass="20" diaginertia="1 1 1"/>
+            <joint name="tx" type="slide" axis="1 0 0" class="gantry" range="-0.5 1.5"/>
             
             <body name="gantry_y" pos="0 0 0">
-                <inertial pos="0 0 0" mass="8" diaginertia="1 1 1"/>
-                <joint name="ty" type="slide" axis="0 1 0" class="gantry"/>
+                <inertial pos="0 0 0" mass="15" diaginertia="1 1 1"/>
+                <joint name="ty" type="slide" axis="0 1 0" class="gantry" range="-0.5 0.5"/>
                 
                 <body name="gantry_z" pos="0 0 0">
-                    <inertial pos="0 0 0" mass="5" diaginertia="1 1 1"/>
-                    <joint name="tz" type="slide" axis="0 0 1" class="gantry"/>
+                    <inertial pos="0 0 0" mass="10" diaginertia="1 1 1"/>
+                    <joint name="tz" type="slide" axis="0 0 1" class="gantry" range="0.0 0.6"/>
                     
                     <body name="wrist_roll" pos="0 0 0">
-                        <!-- ADDED INERTIAL -->
-                        <inertial pos="0 0 0" mass="1" diaginertia="0.1 0.1 0.1"/>
+                        <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
                         <joint name="rx" axis="1 0 0" range="-0.5 0.5" class="robot"/>
                         
                         <body name="wrist_pitch" pos="0 0 0">
-                            <!-- ADDED INERTIAL -->
-                            <inertial pos="0 0 0" mass="1" diaginertia="0.1 0.1 0.1"/>
+                            <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
                             <joint name="ry" axis="0 1 0" range="-0.8 0.8" class="robot"/>
                             
                             <body name="wrist_yaw" pos="0 0 0">
-                                <!-- ADDED INERTIAL -->
-                                <inertial pos="0 0 0" mass="1" diaginertia="0.1 0.1 0.1"/>
+                                <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
                                 <joint name="rz" axis="0 0 1" range="-0.8 0.8" class="robot"/>
 
-                                <body name="palm" pos="0 0 0" euler="1.57 0 3.14"> 
-                                    <geom type="box" size="0.045 0.04 0.015" pos="0 0.02 0" class="robot"/>
+                                <!-- PALM -->
+                                <body name="palm" pos="0 0 0" euler="3.14 0 0"> 
+                                    <geom type="box" size="0.045 0.04 0.015" pos="0 0.02 0" class="robot" contype="0" conaffinity="0" mass="1.0"/>
                                     
                                     <!-- THUMB -->
-                                    <body name="th_base" pos="0.02 -0.02 0.02" euler="0 0.785 0">
+                                    <body name="th_base" pos="0.03 0.02 0.02" euler="0 0.2 0">
                                         <joint name="th_abd" axis="0 0 -1" range="-0.5 0.5" class="finger"/>
                                         <geom fromto="0 0 0 0.03 0 0" class="finger"/>
-                                        <body name="th_prox" pos="0.03 0 0" euler="0 0 0">
+                                        <body name="th_prox" pos="0.03 0 0">
                                             <joint name="th_j2" axis="0 1 0" range="-0.2 0.5" class="finger"/>
                                             <geom fromto="0 0 0 0.03 0 0" class="finger"/>
                                             <body name="th_dist" pos="0.03 0 0">
@@ -90,7 +115,7 @@
                                         </body>
                                     </body>
                                     <!-- INDEX -->
-                                    <body name="ff_base" pos="0.033 0.06 0">
+                                    <body name="ff_base" pos="-0.015 0.06 0" euler="0 0 -1.57">
                                         <joint name="ff_abd" axis="0 0 1" range="-0.4 0.4" class="finger"/>
                                         <geom fromto="0 0 0 0 0.04 0" class="finger"/>
                                         <body name="ff_prox" pos="0 0.04 0">
@@ -108,7 +133,7 @@
                                         </body>
                                     </body>
                                     <!-- MIDDLE -->
-                                    <body name="mf_base" pos="0.011 0.065 0">
+                                    <body name="mf_base" pos="0.0 0.065 0" euler="0 0 -1.57">
                                         <joint name="mf_abd" axis="0 0 1" range="-0.2 0.2" class="finger"/>
                                         <geom fromto="0 0 0 0 0.045 0" class="finger"/>
                                         <body name="mf_prox" pos="0 0.045 0">
@@ -126,7 +151,7 @@
                                         </body>
                                     </body>
                                     <!-- RING -->
-                                    <body name="rf_base" pos="-0.011 0.06 0">
+                                    <body name="rf_base" pos="0.015 0.06 0" euler="0 0 -1.57">
                                         <joint name="rf_abd" axis="0 0 1" range="-0.2 0.2" class="finger"/>
                                         <geom fromto="0 0 0 0 0.04 0" class="finger"/>
                                         <body name="rf_prox" pos="0 0.04 0">
@@ -144,7 +169,7 @@
                                         </body>
                                     </body>
                                     <!-- PINKY -->
-                                    <body name="lf_base" pos="-0.033 0.055 0">
+                                    <body name="lf_base" pos="0.03 0.055 0" euler="0 0 -1.57">
                                         <joint name="lf_abd" axis="0 0 1" range="-0.4 0.4" class="finger"/>
                                         <geom fromto="0 0 0 0 0.035 0" class="finger"/>
                                         <body name="lf_prox" pos="0 0.035 0">
@@ -171,16 +196,17 @@
     </worldbody>
     
     <actuator>
-        <position name="a_tx" joint="tx" kp="5000"/>
-        <position name="a_ty" joint="ty" kp="5000"/>
-        <position name="a_tz" joint="tz" kp="5000"/>
-        <position name="a_rx" joint="rx" kp="500"/>
-        <position name="a_ry" joint="ry" kp="500"/>
-        <position name="a_rz" joint="rz" kp="500"/>
-        <position name="a_th_abd" joint="th_abd" kp="50"/> <position name="a_th_j2" joint="th_j2" kp="50"/> <position name="a_th_j3" joint="th_j3" kp="50"/> <position name="a_th_j4" joint="th_j4" kp="50"/>
-        <position name="a_ff_abd" joint="ff_abd" kp="50"/> <position name="a_ff_j2" joint="ff_j2" kp="50"/> <position name="a_ff_j3" joint="ff_j3" kp="50"/> <position name="a_ff_j4" joint="ff_j4" kp="50"/>
-        <position name="a_mf_abd" joint="mf_abd" kp="50"/> <position name="a_mf_j2" joint="mf_j2" kp="50"/> <position name="a_mf_j3" joint="mf_j3" kp="50"/> <position name="a_mf_j4" joint="mf_j4" kp="50"/>
-        <position name="a_rf_abd" joint="rf_abd" kp="50"/> <position name="a_rf_j2" joint="rf_j2" kp="50"/> <position name="a_rf_j3" joint="rf_j3" kp="50"/> <position name="a_rf_j4" joint="rf_j4" kp="50"/>
-        <position name="a_lf_abd" joint="lf_abd" kp="50"/> <position name="a_lf_j2" joint="lf_j2" kp="50"/> <position name="a_lf_j3" joint="lf_j3" kp="50"/> <position name="a_lf_j4" joint="lf_j4" kp="50"/>
+        <position name="a_tx" joint="tx" kp="5000" class="gantry"/>
+        <position name="a_ty" joint="ty" kp="5000" class="gantry"/>
+        <position name="a_tz" joint="tz" kp="5000" class="gantry"/>
+        <position name="a_rx" joint="rx" kp="500" class="gantry"/>
+        <position name="a_ry" joint="ry" kp="500" class="gantry"/>
+        <position name="a_rz" joint="rz" kp="500" class="gantry"/>
+        
+        <position name="a_th_abd" joint="th_abd" kp="40" class="finger"/> <position name="a_th_j2" joint="th_j2" kp="40" class="finger"/> <position name="a_th_j3" joint="th_j3" kp="40" class="finger"/> <position name="a_th_j4" joint="th_j4" kp="40" class="finger"/>
+        <position name="a_ff_abd" joint="ff_abd" kp="40" class="finger"/> <position name="a_ff_j2" joint="ff_j2" kp="40" class="finger"/> <position name="a_ff_j3" joint="ff_j3" kp="40" class="finger"/> <position name="a_ff_j4" joint="ff_j4" kp="40" class="finger"/>
+        <position name="a_mf_abd" joint="mf_abd" kp="40" class="finger"/> <position name="a_mf_j2" joint="mf_j2" kp="40" class="finger"/> <position name="a_mf_j3" joint="mf_j3" kp="40" class="finger"/> <position name="a_mf_j4" joint="mf_j4" kp="40" class="finger"/>
+        <position name="a_rf_abd" joint="rf_abd" kp="40" class="finger"/> <position name="a_rf_j2" joint="rf_j2" kp="40" class="finger"/> <position name="a_rf_j3" joint="rf_j3" kp="40" class="finger"/> <position name="a_rf_j4" joint="rf_j4" kp="40" class="finger"/>
+        <position name="a_lf_abd" joint="lf_abd" kp="40" class="finger"/> <position name="a_lf_j2" joint="lf_j2" kp="40" class="finger"/> <position name="a_lf_j3" joint="lf_j3" kp="40" class="finger"/> <position name="a_lf_j4" joint="lf_j4" kp="40" class="finger"/>
     </actuator>
 </mujoco>

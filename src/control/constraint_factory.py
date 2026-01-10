@@ -1,6 +1,7 @@
 # src/control/constraint_factory.py
 import numpy as np
 from scipy import sparse
+from typing import List, Optional 
 
 from .servo import ConstraintBlock
 from .key_progress import compute_key_success_row, normalize_key_travel
@@ -271,3 +272,94 @@ class ConstraintFactory:
         u = np.array([np.inf], dtype=float)
 
         return ConstraintBlock(A=A, l=l, u=u)
+
+    # ------------------------------------------------------------------
+    # NEW: Tier 2 - Gantry Workspace Constraints
+    # ------------------------------------------------------------------
+    def create_gantry_workspace_constraint(
+        self,
+        gantry_qpos_translation: np.ndarray,  # (3,) for tx, ty, tz current positions
+        gantry_qvel_indices: List[int],       # Indices of tx, ty, tz in full ndof (e.g., [0, 1, 2])
+        workspace_min: np.ndarray,            # (3,) min for tx, ty, tz
+        workspace_max: np.ndarray,            # (3,) max for tx, ty, tz
+        dt: float,                            # Simulation timestep
+        max_gantry_speed: float = 0.5,        # m/s max allowed translational speed
+    ) -> ConstraintBlock:
+        """
+        Creates hard constraints to keep the gantry's translational joints
+        (tx, ty, tz) within a specified workspace box.
+
+        The constraint is formulated as:
+            q_min <= q_current + q_dot * dt <= q_max
+        which simplifies to:
+            (q_min - q_current) / dt <= q_dot <= (q_max - q_current) / dt
+
+        These bounds are applied to the relevant q_dot components.
+
+        Parameters
+        ----------
+        gantry_qpos_translation : np.ndarray
+            Current positions of gantry's translational joints (tx, ty, tz), shape (3,).
+        gantry_qvel_indices : List[int]
+            List of indices corresponding to tx, ty, tz in the full q_dot vector.
+        workspace_min : np.ndarray
+            Minimum allowed position for tx, ty, tz, shape (3,).
+        workspace_max : np.ndarray
+            Maximum allowed position for tx, ty, tz, shape (3,).
+        dt : float
+            Simulation timestep.
+        max_gantry_speed : float, optional
+            Maximum absolute velocity (m/s) allowed for the gantry axes,
+            used to cap computed q_dot bounds for numerical stability.
+
+        Returns
+        -------
+        ConstraintBlock
+            A : (3, ndof) - Identity for gantry translation DOFs, zero elsewhere.
+            l : (3,)      - Lower bounds for q_dot (tx, ty, tz).
+            u : (3,)      - Upper bounds for q_dot (tx, ty, tz).
+        """
+        num_trans_axes = len(gantry_qpos_translation)
+
+        if dt <= 0:
+            return ConstraintBlock(sparse.csc_matrix((0, self.ndof)), np.array([]), np.array([]))
+
+        # Build sparse matrix efficiently using COO format then convert to CSC
+        row_indices = []
+        col_indices = []
+        data_vals = []
+        l_gantry_trans = np.zeros(num_trans_axes)
+        u_gantry_trans = np.zeros(num_trans_axes)
+
+        for i in range(num_trans_axes):
+            q_curr = gantry_qpos_translation[i]
+            q_min = workspace_min[i]
+            q_max = workspace_max[i]
+
+            # This row constrains q_dot_i
+            row_indices.append(i)
+            col_indices.append(gantry_qvel_indices[i])
+            data_vals.append(1.0)
+
+            # Calculate bounds on q_dot_i to reach q_min/q_max in one timestep
+            lower_bound_q_dot_i = (q_min - q_curr) / dt
+            upper_bound_q_dot_i = (q_max - q_curr) / dt
+
+            # Numerical stability & ensuring movement away from violation
+            # If already below min, must move positively or stay still.
+            if q_curr < q_min:
+                lower_bound_q_dot_i = max(lower_bound_q_dot_i, 0.0)
+            # If already above max, must move negatively or stay still.
+            if q_curr > q_max:
+                upper_bound_q_dot_i = min(upper_bound_q_dot_i, 0.0)
+
+            # Cap bounds by overall max gantry speed to prevent huge velocities
+            l_gantry_trans[i] = np.clip(lower_bound_q_dot_i, -max_gantry_speed, max_gantry_speed)
+            u_gantry_trans[i] = np.clip(upper_bound_q_dot_i, -max_gantry_speed, max_gantry_speed)
+
+        A_gantry_trans = sparse.csc_matrix(
+            (data_vals, (row_indices, col_indices)),
+            shape=(num_trans_axes, self.ndof)
+        )
+
+        return ConstraintBlock(A=A_gantry_trans, l=l_gantry_trans, u=u_gantry_trans)

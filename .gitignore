@@ -5,3 +5,7 @@ read.md
 .venv/
 __pycache__/
 *.py[cod]
+.claude/
+FINAL_STATUS.md
+IMPLEMENTATION_SUMMARY.md
+README.mdthird_party/mujoco_menagerie/

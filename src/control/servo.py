@@ -45,7 +45,13 @@ class ChordServo:
         - sigma_key : non-negative slack for key-strike constraints
     """
 
-    def __init__(self, n_dof: int = 7):
+    def __init__(
+        self,
+        n_dof: int = 7,
+        acc_limit: float = 10.0,
+        v_max: float | np.ndarray = 2.0,
+        dt: float = 0.001,
+    ):
         self.n_dof = n_dof
         self.solver = osqp.OSQP()
 
@@ -60,6 +66,10 @@ class ChordServo:
         self.Rho_guard = 1e6  # cost of violating hard safety guards (unused)
         self.Rho_sep = 1e5    # cost of violating separation constraints
         self.W_key = 1e3      # cost of missing key strike deadlines (sigma_key)
+
+        self.acc_limit = float(acc_limit)
+        self.v_max = v_max
+        self.dt = float(dt)
 
         self.prev_q_dot = np.zeros(n_dof)
 
@@ -157,12 +167,24 @@ class ChordServo:
 
         # 1) Dynamic limits (joint velocity & acceleration bounds merged)
         #    q_dot_min <= I * q_dot <= q_dot_max
-        acc_limit = 10.0  # rad/s^2
-        dt = 0.001
-        v_max = 2.0       # rad/s
+        dt = self.dt
+        v_max = np.asarray(self.v_max, dtype=float)
+        if v_max.ndim == 0:
+            v_max = np.full(self.n_dof, float(v_max))
+        elif v_max.shape[0] != self.n_dof:
+            raise ValueError(f"v_max must have shape ({self.n_dof},) or be scalar.")
 
-        min_v = np.maximum(-v_max, self.prev_q_dot - acc_limit * dt)
-        max_v = np.minimum(v_max, self.prev_q_dot + acc_limit * dt)
+        min_v = np.maximum(-v_max, self.prev_q_dot - self.acc_limit * dt)
+        max_v = np.minimum(v_max, self.prev_q_dot + self.acc_limit * dt)
+        # Guard against infeasible bounds when prev_q_dot drifts outside limits.
+        viol = min_v > max_v
+        if np.any(viol):
+            q_clip = np.clip(self.prev_q_dot, -v_max, v_max)
+            min_v[viol] = q_clip[viol]
+            max_v[viol] = q_clip[viol]
+        # Final numeric guard
+        min_v = np.nan_to_num(min_v, nan=0.0, posinf=0.0, neginf=0.0)
+        max_v = np.nan_to_num(max_v, nan=0.0, posinf=0.0, neginf=0.0)
 
         dyn_A = sparse.hstack(
             [

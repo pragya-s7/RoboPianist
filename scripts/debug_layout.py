@@ -4,7 +4,7 @@ import numpy as np
 from src.planning.kinematics import HandKinematics
 from src.planning.piano_geometry import PianoGeometry
 
-hk = HandKinematics("assets/scene.xml")
+hk = HandKinematics()
 pg = PianoGeometry()
 
 # 1) Neutral pose
@@ -17,7 +17,6 @@ k = pg.get_key_location(60)
 print("Key 60 center:", k)
 
 # 3) Where your *wrist* target for that key is:
-from src.planning.kinematics import HandKinematics
 wrist_target = hk.solve_wrist_target(60, finger=1, is_left_hand=False)
 print("Wrist target for MIDI 60:", wrist_target)
 

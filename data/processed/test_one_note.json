@@ -1,0 +1,33 @@
+{
+  "source": "test_one_note",
+  "total_events": 1,
+  "events": [
+    {
+      "onset_sec": 1.0,
+      "staff": 1,
+      "pitches": [60],
+      "fingering": [3],
+      "notes": [
+        {
+          "pitch_midi": 60,
+          "velocity": 64
+        }
+      ],
+      "contacts": [
+        {
+          "pitch": 60,
+          "finger": 3,
+          "staff": 1,
+          "onset_sec": 1.0,
+          "velocity": 64,
+          "key_center": [0.636, -0.1, 0.0],
+          "is_black": false,
+          "pretouch_start_sec": 0.85,
+          "strike_time_sec": 1.0,
+          "hold_end_sec": 1.1,
+          "release_end_sec": 1.3
+        }
+      ]
+    }
+  ]
+}
