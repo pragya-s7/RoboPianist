@@ -251,6 +251,9 @@ def run_sim(json_file):
     actuator_meta = {}
     finger_gain_enabled = 10.0
     finger_bias_enabled = -10.0
+    shadow_finger_kp = 120.0
+    shadow_finger_kd = 2.5
+    shadow_finger_force = 35.0
     for aid in range(model.nu):
         name = mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_ACTUATOR, aid)
         if not name:
@@ -280,7 +283,11 @@ def run_sim(json_file):
         name = mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_JOINT, jid)
         if not name:
             continue
-        if name.startswith(("th_", "ff_", "mf_", "rf_", "lf_")) or name.startswith("rh_"):
+        if use_shadow and name.startswith("rh_"):
+            dof = model.jnt_dofadr[jid]
+            model.dof_damping[dof] = max(model.dof_damping[dof], 1.5)
+            model.dof_frictionloss[dof] = max(model.dof_frictionloss[dof], 0.2)
+        elif name.startswith(("th_", "ff_", "mf_", "rf_", "lf_")) or name.startswith("rh_"):
             dof = model.jnt_dofadr[jid]
             model.dof_damping[dof] = max(model.dof_damping[dof], 12.0)
             model.dof_frictionloss[dof] = max(model.dof_frictionloss[dof], 1.0)
@@ -311,6 +318,55 @@ def run_sim(json_file):
 
     jacp = np.zeros((3, model.nv))
     jacr = np.zeros((3, model.nv))
+
+    # Shadow hand: infer which actuator direction actually curls the fingertip down.
+    shadow_act_curl = {}
+    if use_shadow:
+        tmp_data = mujoco.MjData(model)
+
+        def _tip_z_for_ctrl(act_id: int, ctrl_val: float, tip_id: int) -> float:
+            mujoco.mj_resetData(model, tmp_data)
+            tmp_data.ctrl[:] = 0.0
+            tmp_data.ctrl[act_id] = ctrl_val
+            for _ in range(200):
+                mujoco.mj_step(model, tmp_data)
+            return float(tmp_data.site_xpos[tip_id][2])
+
+        finger_act_mag = {}
+        for f_idx, acts in finger_act_map.items():
+            finger_act_mag[f_idx] = {}
+            tip_id = finger_site_ids.get(f_idx, -1)
+            if tip_id is None or tip_id < 0:
+                continue
+            for act_id in acts:
+                lo, hi = act_ctrl_ranges[act_id]
+                if not act_ctrl_limited[act_id] or abs(hi - lo) < 1e-6:
+                    continue
+                z_lo = _tip_z_for_ctrl(act_id, lo, tip_id)
+                z_hi = _tip_z_for_ctrl(act_id, hi, tip_id)
+                p_lo = tmp_data.site_xpos[tip_id].copy()
+                mujoco.mj_resetData(model, tmp_data)
+                tmp_data.ctrl[:] = 0.0
+                tmp_data.ctrl[act_id] = hi
+                for _ in range(200):
+                    mujoco.mj_step(model, tmp_data)
+                p_hi = tmp_data.site_xpos[tip_id].copy()
+                d = p_hi - p_lo
+                dz = d[2]
+                dxy = float((d[0] ** 2 + d[1] ** 2) ** 0.5)
+                score = (-dz) - 0.3 * dxy
+                direction = 1 if dz < 0.0 else -1
+                shadow_act_curl[act_id] = (direction, score)
+                finger_act_mag[f_idx][act_id] = score
+        keep_per_finger = 2
+        for f_idx, mags in finger_act_mag.items():
+            if not mags:
+                continue
+            sorted_acts = sorted(mags.items(), key=lambda kv: kv[1], reverse=True)
+            keep = {act_id for act_id, _ in sorted_acts[:keep_per_finger]}
+            for act_id, mag in mags.items():
+                if act_id not in keep or mag <= 0.0:
+                    shadow_act_curl[act_id] = (0, mag)
 
     # --- INITIAL POSE ---
     mid_c = piano_geo.get_key_location(60)
@@ -372,8 +428,9 @@ def run_sim(json_file):
     TARGET_SMOOTHING_TAU_Z = 0.18
     smooth_finger_targets = {f: 0.0 for f in range(1, 6)}
     FINGER_SMOOTHING_TAU = 0.12 if use_shadow else 0.08
-    MAX_FINGER_CURL = 0.45 if use_shadow else 0.6
-    FINGER_FLEX_RANGE = 0.35 if use_shadow else 0.5
+    # Allow full joint range so STRIKE can actually depress keys.
+    MAX_FINGER_CURL = 2.0
+    FINGER_FLEX_RANGE = 1.8
 
     GANTRY_KP = np.array([20.0, 20.0, 20.0, 40.0, 40.0, 40.0])
     GANTRY_KD = np.array([10.0, 10.0, 10.0, 10.0, 10.0, 10.0])
@@ -444,11 +501,11 @@ def run_sim(json_file):
         for sm in active_machines:
             val = 0.0
             if sm.mode == ContactMode.STRIKE:
-                val = 1.0
+                val = 1.8
             elif sm.mode == ContactMode.HOLD:
-                val = 0.6
+                val = 1.4
             elif sm.mode == ContactMode.PRETOUCH:
-                val = 0.1
+                val = 0.8
             finger_targets[sm.finger_idx] = max(finger_targets[sm.finger_idx], val)
 
         # --- SIMPLE GANTRY CONTROL USING WRIST TARGETS ---
@@ -536,6 +593,13 @@ def run_sim(json_file):
         for aid, meta in actuator_meta.items():
             f_idx, suffix = meta
             if use_shadow:
+                # Position actuator: force = kp * (ctrl - qpos) - kd * qvel
+                model.actuator_gainprm[aid, 0] = shadow_finger_kp
+                model.actuator_biasprm[aid, 1] = -shadow_finger_kp
+                model.actuator_biasprm[aid, 2] = -shadow_finger_kd
+                model.actuator_forcerange[aid] = np.array(
+                    [-shadow_finger_force, shadow_finger_force], dtype=float
+                )
                 continue
             if suffix == "abd":
                 model.actuator_gainprm[aid, 0] = 0.0
@@ -571,7 +635,18 @@ def run_sim(json_file):
                     target = home
                     if act_ctrl_limited[act_id]:
                         lo, hi = act_ctrl_ranges[act_id]
-                        target = home + smooth_finger_targets[f_idx] * FINGER_FLEX_RANGE * (hi - home)
+                        if use_shadow:
+                            direction, _ = shadow_act_curl.get(act_id, (0, 0.0))
+                            if direction == 0:
+                                target = home
+                            else:
+                                if direction > 0:
+                                    span = hi - home
+                                else:
+                                    span = home - lo
+                                target = home + direction * smooth_finger_targets[f_idx] * FINGER_FLEX_RANGE * span
+                        else:
+                            target = home + smooth_finger_targets[f_idx] * FINGER_FLEX_RANGE * (hi - home)
                         target = np.clip(target, lo, hi)
                     data.ctrl[act_id] = float(target)
 

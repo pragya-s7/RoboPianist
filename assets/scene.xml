@@ -82,15 +82,15 @@
                     
                     <body name="wrist_roll" pos="0 0 0">
                         <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
-                        <joint name="rx" axis="1 0 0" range="-0.5 0.5" class="robot"/>
+                        <joint name="rx" type="hinge" axis="1 0 0" range="-0.5 0.5" class="robot"/>
                         
                         <body name="wrist_pitch" pos="0 0 0">
                             <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
-                            <joint name="ry" axis="0 1 0" range="-0.8 0.8" class="robot"/>
+                            <joint name="ry" type="hinge" axis="0 1 0" range="-0.8 0.8" class="robot"/>
                             
                             <body name="wrist_yaw" pos="0 0 0">
                                 <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
-                                <joint name="rz" axis="0 0 1" range="-0.8 0.8" class="robot"/>
+                                <joint name="rz" type="hinge" axis="0 0 1" range="-0.8 0.8" class="robot"/>
 
                                 <!-- PALM -->
                                 <body name="palm" pos="0 0 0" euler="3.14 0 0"> 

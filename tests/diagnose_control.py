@@ -224,8 +224,9 @@ def diagnose_control(json_file):
     TARGET_SMOOTHING_TAU_Z = 0.18
     smooth_finger_targets = {f: 0.0 for f in range(1, 6)}
     FINGER_SMOOTHING_TAU = 0.08
-    MAX_FINGER_CURL = 0.6
-    FINGER_FLEX_RANGE = 0.5
+    # Allow full joint range so STRIKE can actually depress keys.
+    MAX_FINGER_CURL = 1.25
+    FINGER_FLEX_RANGE = 1.0
 
     GANTRY_KP = np.array([1.6, 1.6, 1.4, 0.8, 0.8, 0.8])
     GANTRY_KD = np.array([1.4, 1.4, 1.2, 0.6, 0.6, 0.6])

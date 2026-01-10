@@ -20,17 +20,17 @@
     <default class="right_hand">
       <mesh scale="0.001 0.001 0.001"/>
       <joint axis="1 0 0" damping="0.05" armature="0.0002" frictionloss="0.01"/>
-      <position forcerange="-1 1"/>
+      <position forcerange="-5 5"/>
 
       <default class="wrist">
         <joint damping="0.5"/>
         <default class="wrist_y">
           <joint axis="0 1 0" range="-0.523599 0.174533"/>
-          <position kp="10" ctrlrange="-0.523599 0.174533" forcerange="-10 10"/>
+          <position kp="10" ctrlrange="-0.523599 0.174533" forcerange="-20 20"/>
         </default>
         <default class="wrist_x">
           <joint range="-0.698132 0.488692"/>
-          <position kp="8" ctrlrange="-0.698132 0.488692" forcerange="-5 5"/>
+          <position kp="8" ctrlrange="-0.698132 0.488692" forcerange="-20 20"/>
         </default>
       </default>
 
@@ -118,19 +118,19 @@
       <joint name="tx" type="slide" axis="1 0 0" class="gantry" range="-0.5 1.5"/>
       <body name="gantry_y" pos="0 0 0">
         <inertial pos="0 0 0" mass="15" diaginertia="1 1 1"/>
-        <joint name="ty" type="slide" axis="0 1 0" class="gantry" range="-0.5 0.5"/>
+        <joint name="ty" type="slide" axis="0 1 0" class="gantry" range="-0.8 0.5"/>
         <body name="gantry_z" pos="0 0 0">
           <inertial pos="0 0 0" mass="10" diaginertia="1 1 1"/>
           <joint name="tz" type="slide" axis="0 0 1" class="gantry" range="0.0 0.6"/>
           <body name="wrist_roll" pos="0 0 0">
             <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
-            <joint name="rx" axis="1 0 0" range="-0.5 0.5"/>
+            <joint name="rx" type="hinge" axis="1 0 0" range="-0.5 0.5"/>
             <body name="wrist_pitch" pos="0 0 0">
               <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
-              <joint name="ry" axis="0 1 0" range="-0.8 0.8"/>
+              <joint name="ry" type="hinge" axis="0 1 0" range="-0.8 0.8"/>
               <body name="wrist_yaw" pos="0 0 0">
                 <inertial pos="0 0 0" mass="2" diaginertia="0.1 0.1 0.1"/>
-                <joint name="rz" axis="0 0 1" range="-0.8 0.8"/>
+                <joint name="rz" type="hinge" axis="0 0 1" range="-0.8 0.8"/>
 
                 <body name="rh_forearm" pos="0 0 0" childclass="right_hand" quat="0.5 -0.5 0.5 0.5">
                   <inertial mass="3" pos="0 0 0.09" diaginertia="0.0138 0.0138 0.00744"/>

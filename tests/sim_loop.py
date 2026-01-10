@@ -251,7 +251,10 @@ def run_sim(json_file):
     # Finger actuator metadata + gain presets
     actuator_meta = {}
     finger_gain_enabled = 30.0 if use_shadow else 10.0
-    finger_bias_enabled = -30.0 if use_shadow else -10.0
+    finger_bias_enabled = 0.0 if use_shadow else -10.0
+    shadow_finger_kp = 120.0
+    shadow_finger_kd = 2.5
+    shadow_finger_force = 35.0
     for aid in range(model.nu):
         name = mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_ACTUATOR, aid)
         if not name:
@@ -282,11 +285,15 @@ def run_sim(json_file):
         if not name:
             continue
         if use_shadow:
-            # Avoid over-damping Shadow Hand finger joints (prevents curling).
+            # Add light damping on Shadow joints to prevent instability.
             if name in ("tx", "ty", "tz", "rx", "ry", "rz"):
                 dof = model.jnt_dofadr[jid]
                 model.dof_damping[dof] = max(model.dof_damping[dof], 12.0)
                 model.dof_frictionloss[dof] = max(model.dof_frictionloss[dof], 1.0)
+            elif name.startswith("rh_"):
+                dof = model.jnt_dofadr[jid]
+                model.dof_damping[dof] = max(model.dof_damping[dof], 1.5)
+                model.dof_frictionloss[dof] = max(model.dof_frictionloss[dof], 0.2)
             continue
         if name.startswith(("th_", "ff_", "mf_", "rf_", "lf_")) or name.startswith("rh_"):
             dof = model.jnt_dofadr[jid]
@@ -347,16 +354,71 @@ def run_sim(json_file):
     jacp = np.zeros((3, model.nv))
     jacr = np.zeros((3, model.nv))
 
+    # Shadow hand: infer which actuator direction actually curls the fingertip down.
+    shadow_act_curl = {}
+    if use_shadow:
+        tmp_data = mujoco.MjData(model)
+
+        def _tip_z_for_ctrl(act_id: int, ctrl_val: float, tip_id: int) -> float:
+            mujoco.mj_resetData(model, tmp_data)
+            tmp_data.ctrl[:] = 0.0
+            tmp_data.ctrl[act_id] = ctrl_val
+            for _ in range(200):
+                mujoco.mj_step(model, tmp_data)
+            return float(tmp_data.site_xpos[tip_id][2])
+
+        finger_act_mag = {}
+        for f_idx, acts in finger_act_map.items():
+            finger_act_mag[f_idx] = {}
+            tip_id = finger_site_ids.get(f_idx, -1)
+            if tip_id is None or tip_id < 0:
+                continue
+            for act_id in acts:
+                lo, hi = act_ctrl_ranges[act_id]
+                if not act_ctrl_limited[act_id] or abs(hi - lo) < 1e-6:
+                    continue
+                z_lo = _tip_z_for_ctrl(act_id, lo, tip_id)
+                z_hi = _tip_z_for_ctrl(act_id, hi, tip_id)
+                p_lo = tmp_data.site_xpos[tip_id].copy()
+                # Recompute for hi to get full delta vector.
+                mujoco.mj_resetData(model, tmp_data)
+                tmp_data.ctrl[:] = 0.0
+                tmp_data.ctrl[act_id] = hi
+                for _ in range(200):
+                    mujoco.mj_step(model, tmp_data)
+                p_hi = tmp_data.site_xpos[tip_id].copy()
+                d = p_hi - p_lo
+                dz = d[2]
+                dxy = float((d[0] ** 2 + d[1] ** 2) ** 0.5)
+                score = (-dz) - 0.3 * dxy
+                direction = 1 if dz < 0.0 else -1
+                shadow_act_curl[act_id] = (direction, score)
+                finger_act_mag[f_idx][act_id] = score
+        # Keep only the strongest curl actuators per finger (avoids extra joints).
+        keep_per_finger = 2
+        for f_idx, mags in finger_act_mag.items():
+            if not mags:
+                continue
+            sorted_acts = sorted(mags.items(), key=lambda kv: kv[1], reverse=True)
+            keep = {act_id for act_id, _ in sorted_acts[:keep_per_finger]}
+            for act_id, mag in mags.items():
+                if act_id not in keep or mag <= 0.0:
+                    shadow_act_curl[act_id] = (0, mag)
+
     # --- INITIAL POSE ---
     mid_c = piano_geo.get_key_location(60)
     key_min_x = piano_geo.get_key_location(21).center_x
     key_max_x = piano_geo.get_key_location(108).center_x
     # Use a conservative home pose; precise targeting will use calibrated tip offsets.
-    base_y = -0.30 if use_shadow else -0.15
+    # Fingers point toward piano (+Y), so wrist needs to be pulled back (-Y)
+    base_y = -0.55 if use_shadow else -0.15  # Further back to reach keys
     base_z = 0.13 if use_shadow else 0.11
-    SHADOW_PITCH = -0.35
-    home_ry = SHADOW_PITCH if use_shadow else 0.0
-    home_pose = np.array([mid_c.center_x, base_y, base_z, 0.0, home_ry, 0.0])
+    # No pitch needed - fingers curl down to press keys. Pitch causes finger tilt.
+    SHADOW_PITCH = 0.0
+    SHADOW_ROLL = 0.0
+    home_rx = SHADOW_ROLL
+    home_ry = SHADOW_PITCH
+    home_pose = np.array([mid_c.center_x, base_y, base_z, home_rx, home_ry, 0.0])
 
     mujoco.mj_resetData(model, data)
 
@@ -390,27 +452,53 @@ def run_sim(json_file):
             continue
         tip_pos = data.site_xpos[sid].copy()
         finger_tip_offsets[f_idx] = tip_pos - wrist_pos_home
-    # Auto-calibrate base_z from actual key site height + fingertip offset.
-    mid_key_pos = key_site_world.get(60)
-    mid_tip_offset = finger_tip_offsets.get(3)
-    if mid_tip_offset is None:
-        mid_tip_offset = finger_tip_offsets.get(2)
-    if mid_tip_offset is None:
-        mid_tip_offset = finger_tip_offsets.get(4)
-    if mid_key_pos is not None and mid_tip_offset is not None:
-        base_z = float(mid_key_pos[2] + 0.03 - mid_tip_offset[2])
-        # Choose the fingertip offset that yields a base_y within gantry range,
-        # preferring values closest to a neutral depth.
-        target_base_y = -0.25
-        y_candidates = []
-        for off in finger_tip_offsets.values():
-            cand = float(mid_key_pos[1] - off[1])
-            if -0.45 <= cand <= -0.15:
-                y_candidates.append(cand)
-        if y_candidates:
-            base_y = float(min(y_candidates, key=lambda v: abs(v - target_base_y)))
-        else:
-            base_y = float(np.clip(mid_key_pos[1], -0.45, -0.15))
+
+    # AUTO-CALIBRATE: Compute GANTRY position to place fingertip at key
+    # Account for kinematic chain offset between gantry and wrist
+    mid_key_pos = key_site_world.get(60)  # Middle C (MIDI 60)
+
+    # Compute gantry-to-wrist offset (due to kinematic chain + rotation)
+    gantry_pos_init = np.array([data.qpos[q_idx] for q_idx in gantry_qpos_ids[:3]])
+    gantry_to_wrist_offset = wrist_pos_home - gantry_pos_init
+
+    # Use middle finger (3) as reference, fallback to index (2) or ring (4)
+    ref_finger = 3
+    ref_offset = finger_tip_offsets.get(ref_finger)
+    if ref_offset is None:
+        ref_finger = 2
+        ref_offset = finger_tip_offsets.get(ref_finger)
+    if ref_offset is None:
+        ref_finger = 4
+        ref_offset = finger_tip_offsets.get(ref_finger)
+
+    if mid_key_pos is not None and ref_offset is not None:
+        # Step 1: Where should fingertip be? (key position + hover clearance)
+        hover_clearance = 0.02
+        target_fingertip = np.array([mid_key_pos[0], mid_key_pos[1], mid_key_pos[2] + hover_clearance])
+
+        # Step 2: Where should wrist be? (fingertip - fingertip_offset_from_wrist)
+        target_wrist = target_fingertip - ref_offset
+
+        # Step 3: Where should gantry be? (wrist - gantry_to_wrist_offset)
+        target_gantry = target_wrist - gantry_to_wrist_offset
+
+        base_y = float(np.clip(target_gantry[1], -0.8, 0.5))  # Extended Y range
+        base_z = float(np.clip(target_gantry[2], 0.02, 0.55))
+
+        print(f"[CALIBRATION] Gantry target: Y={base_y:.3f}, Z={base_z:.3f}")
+
+        # APPLY calibrated position to gantry
+        home_pose[1] = base_y
+        home_pose[2] = base_z
+        for i, q_idx in enumerate(gantry_qpos_ids):
+            data.qpos[q_idx] = home_pose[i]
+        if len(gantry_act_ids) == 6:
+            data.ctrl[gantry_act_ids] = home_pose
+        mujoco.mj_forward(model, data)
+
+        # Verify calibration
+        new_tip_pos = data.site_xpos[finger_site_ids[ref_finger]].copy()
+        print(f"[CALIBRATION] Fingertip above key: {(new_tip_pos[2] - mid_key_pos[2])*100:.1f}cm")
 
     # Finger home pose (used as neutral target for curls)
     finger_home_targets = {}
@@ -465,12 +553,13 @@ def run_sim(json_file):
         constraint_factory = ConstraintFactory(ndof=n_gantry_dof)
 
         # --- TARGET SMOOTHING ---
-        # Smooth wrist target to prevent erratic jumping between events
-        # Uses exponential smoothing with time constant
-        smooth_wrist_target = np.array([mid_c.center_x, base_y, base_z])
-        smooth_wrist_rot = np.array([0.0, 0.0, 0.0])
-        smooth_desired_z = float(base_z)
-        SHADOW_PITCH = -0.35
+        # Initialize smooth targets to ACTUAL current position to prevent initial jump
+        current_gantry_pos = np.array([data.qpos[i] for i in gantry_qpos_ids])
+        smooth_wrist_target = current_gantry_pos[0:3].copy()
+        smooth_wrist_rot = current_gantry_pos[3:6].copy()
+        
+        smooth_desired_z = float(current_gantry_pos[2])
+        SHADOW_PITCH = 0.0  # No pitch - fingers level, curling does the work
         ROT_SMOOTHING_TAU = 0.25
         TARGET_SMOOTHING_TAU_XY = 0.20  # Faster for responsive positioning
         TARGET_SMOOTHING_TAU_Z = 0.10  # Fast z response for key pressing
@@ -479,15 +568,17 @@ def run_sim(json_file):
         smooth_finger_targets = {f: 0.0 for f in range(1, 6)}
         finger_targets_cmd = {f: 0.0 for f in range(1, 6)}
         last_finger_update = -1.0
-        FINGER_SMOOTHING_TAU = 0.25 if use_shadow else 0.08  # smoother for Shadow Hand response
-        MAX_FINGER_CURL = 1.0 if use_shadow else 0.6
-        FINGER_FLEX_RANGE = 1.0 if use_shadow else 0.5  # fraction of joint range used for curl
+        FINGER_SMOOTHING_TAU = 0.06 if use_shadow else 0.08  # faster Shadow response
+        # Allow full joint range so STRIKE can actually depress keys.
+        MAX_FINGER_CURL = 2.0
+        FINGER_FLEX_RANGE = 1.8  # fraction of joint range used for curl
 
         # Gantry damping gains
         # Adjusted for stability (stiff rotation, damped translation)
-        GANTRY_KP = np.array([20.0, 20.0, 20.0, 40.0, 40.0, 40.0])
-        GANTRY_KD = np.array([10.0, 10.0, 10.0, 10.0, 10.0, 10.0])
-        GANTRY_VEL_MAX = np.array([0.5, 0.5, 0.5, 1.0, 1.0, 1.0])
+        # Reduced rotation gains to prevent jitter, but kept strong enough to hold
+        GANTRY_KP = np.array([20.0, 20.0, 20.0, 30.0, 30.0, 30.0])
+        GANTRY_KD = np.array([10.0, 10.0, 10.0, 5.0, 5.0, 5.0])
+        GANTRY_VEL_MAX = np.array([0.5, 1.0, 0.5, 1.0, 1.0, 1.0])
         servo.v_max = GANTRY_VEL_MAX
         servo.acc_limit = 8.0
         TIP_IK_KP = 6.0
@@ -496,13 +587,16 @@ def run_sim(json_file):
         ROT_KD = np.array([4.0, 4.0, 4.0])
         FORCE_GANTRY_POSE = True
         GANTRY_TRANSLATION_ONLY = True
-        Y_LOCK = True
-        Z_DOWN_RANGE = 0.0
+        Y_LOCK = False
+        # Allow gantry to move down for key pressing (fingertips need to reach key surface)
+        Z_DOWN_RANGE = 0.04  # Allow 4cm downward movement for key pressing
 
         # Finger actuator rate limiting removed to keep joints stiff
 
         while viewer.is_running():
             step_start = time.time()
+
+
 
             # --- READ CURRENT KEY DEPTHS (for state machine & constraints) ---
             key_depths = {}
@@ -534,10 +628,10 @@ def run_sim(json_file):
 
                                 sm = KeyStateMachine(pitch, strike, finger_idx)
                                 if use_shadow:
-                                    sm.hover_height = 0.03
-                                    sm.pretouch_clearance = 0.003
-                                    sm.strike_overtravel = 0.018  # Deeper press for Shadow Hand
-                                    sm.strike_timeout = 0.30  # Give more time for key press
+                                    sm.hover_height = 0.025  # Lower hover for faster approach
+                                    sm.pretouch_clearance = 0.002  # Closer pretouch
+                                    sm.strike_overtravel = 0.020  # 20mm overtravel for reliable key press
+                                    sm.strike_timeout = 0.35  # Give more time for key press
 
                                 # Infer timing parameters from contact spec
                                 sm.approach_lead = max(0.01, strike - pretouch)
@@ -553,10 +647,10 @@ def run_sim(json_file):
                                 for p, f in zip(pitches, fingers):
                                     sm = KeyStateMachine(p, get_onset(e), f)
                                     if use_shadow:
-                                        sm.hover_height = 0.03
-                                        sm.pretouch_clearance = 0.003
-                                        sm.strike_overtravel = 0.018
-                                        sm.strike_timeout = 0.30
+                                        sm.hover_height = 0.025
+                                        sm.pretouch_clearance = 0.002
+                                        sm.strike_overtravel = 0.020
+                                        sm.strike_timeout = 0.35
                                     active_machines.append(sm)
                     event_idx += 1
                 else:
@@ -566,6 +660,7 @@ def run_sim(json_file):
             active_machines = [sm for sm in active_machines if not sm.done]
             for sm in active_machines:
                 sm.update(sim_t, key_depths.get(sm.pitch, 0.0))
+
 
             # --- FINGER KINEMATICS (positions + Jacobians in gantry coords) ---
             finger_kinematics = {}
@@ -589,21 +684,30 @@ def run_sim(json_file):
                 if sm.mode in (ContactMode.PRETOUCH, ContactMode.STRIKE, ContactMode.HOLD)
             ]
             primary_sm = select_primary_machine(active_press_machines, sim_t)
-            # Disable fingertip collisions for non-active fingers to reduce jitter.
-            active_finger_id = primary_sm.finger_idx if primary_sm is not None else None
-            active_pitch = primary_sm.pitch if primary_sm is not None else None
-            contact_enabled = primary_sm is not None and primary_sm.mode == ContactMode.STRIKE
+            # Enable fingertip collisions for fingers that are in PRETOUCH, STRIKE, or HOLD modes.
+            # This allows physical contact with keys for pressing.
+            active_fingers = set()
+            active_pitches = set()
+            for sm in active_machines:
+                if sm.mode in (ContactMode.PRETOUCH, ContactMode.STRIKE, ContactMode.HOLD):
+                    active_fingers.add(sm.finger_idx)
+                    active_pitches.add(sm.pitch)
+
+            # Disable all hand collisions first, then selectively enable
             for gid in hand_geom_ids:
                 model.geom_contype[gid] = 0
                 model.geom_conaffinity[gid] = 0
-            if contact_enabled and active_finger_id is not None:
-                gid = tip_geom_ids.get(active_finger_id)
+
+            # Enable collisions for active fingertips
+            for f_idx in active_fingers:
+                gid = tip_geom_ids.get(f_idx)
                 if gid is not None:
                     model.geom_contype[gid] = 1
                     model.geom_conaffinity[gid] = 1
-            # Disable key collisions except for the active key.
+
+            # Enable collisions for active keys
             for midi, gids in key_geom_ids.items():
-                enabled = contact_enabled and (active_pitch == midi)
+                enabled = midi in active_pitches
                 for gid in gids:
                     model.geom_contype[gid] = 1 if enabled else 0
                     model.geom_conaffinity[gid] = 1 if enabled else 0
@@ -625,11 +729,11 @@ def run_sim(json_file):
                 for sm in active_machines:
                     val = 0.0
                     if sm.mode == ContactMode.STRIKE:
-                        val = 1.0
+                        val = 1.8
                     elif sm.mode == ContactMode.HOLD:
-                        val = 0.8
+                        val = 1.4
                     elif sm.mode == ContactMode.PRETOUCH:
-                        val = 0.4
+                        val = 0.8
                     finger_targets[sm.finger_idx] = max(finger_targets[sm.finger_idx], val)
                     if sm.mode == ContactMode.STRIKE:
                         key_depth = key_depths.get(sm.pitch, 0.0)
@@ -686,8 +790,8 @@ def run_sim(json_file):
 
             # Clamp to gantry limits
             smooth_wrist_target[0] = np.clip(smooth_wrist_target[0], -0.5, 1.5)
-            smooth_wrist_target[1] = np.clip(smooth_wrist_target[1], -0.5, 0.5)
-            smooth_wrist_target[2] = np.clip(smooth_wrist_target[2], 0.10, 0.22)
+            smooth_wrist_target[1] = np.clip(smooth_wrist_target[1], -0.8, 0.5)  # Extended Y range
+            smooth_wrist_target[2] = np.clip(smooth_wrist_target[2], 0.04, 0.25)
 
             arch_pitch = -0.12 if active_press_machines else 0.0
             if use_shadow:
@@ -824,7 +928,12 @@ def run_sim(json_file):
                     q_dot_nom[2] = np.clip(q_dot_nom[2], -0.2, 0.2)
             desired_wrist_z = base_z
             if primary_sm is not None and primary_sm.mode == ContactMode.STRIKE:
-                desired_wrist_z = base_z - 0.015
+                # Drop wrist more aggressively during STRIKE to help fingertip reach key
+                # Key travel is 12mm, so we need fingertip to move at least that much
+                desired_wrist_z = base_z - 0.025
+            elif primary_sm is not None and primary_sm.mode == ContactMode.PRETOUCH:
+                # Slight drop during PRETOUCH to prepare for strike
+                desired_wrist_z = base_z - 0.01
             smooth_desired_z = alpha_z * desired_wrist_z + (1 - alpha_z) * smooth_desired_z
             if idle_hold:
                 q_dot_nom[2] = 0.0
@@ -872,9 +981,10 @@ def run_sim(json_file):
                 gantry_cmd[1] = base_y
             gantry_cmd[2] = smooth_desired_z
             gantry_cmd[3:6] = smooth_wrist_rot
-            gantry_cmd[2] = float(np.clip(gantry_cmd[2], base_z - Z_DOWN_RANGE, base_z + 0.02))
+            # Allow larger Z range: can drop up to Z_DOWN_RANGE below base, or rise 3cm above
+            gantry_cmd[2] = float(np.clip(gantry_cmd[2], max(0.02, base_z - Z_DOWN_RANGE), base_z + 0.03))
             GANTRY_LIMITS = [
-                (-0.5, 1.5), (-0.5, 0.5), (0.0, 0.6),
+                (-0.5, 1.5), (-0.8, 0.5), (0.0, 0.6),  # Extended Y range to -0.8
                 (-0.5, 0.5), (-0.8, 0.8), (-0.8, 0.8),
             ]
             if len(gantry_act_ids) == n_gantry_dof:
@@ -892,20 +1002,17 @@ def run_sim(json_file):
             primary_finger = None if use_shadow else (primary_sm.finger_idx if primary_sm is not None else None)
             # Enable finger actuators with appropriate gains
             # Shadow Hand needs stronger gains for position control
-            shadow_finger_gain = 25.0
-            shadow_finger_bias = -25.0
             for aid, meta in actuator_meta.items():
                 f_idx, suffix = meta
                 if use_shadow:
-                    # Shadow Hand: enable all finger actuators with strong gains
-                    model.actuator_gainprm[aid, 0] = finger_gain_enabled
-                    model.actuator_biasprm[aid, 1] = finger_bias_enabled
-                    if act_trn_type[aid] == mujoco.mjtTrn.mjTRN_TENDON:
-                        model.actuator_forcerange[aid, 0] = -10.0
-                        model.actuator_forcerange[aid, 1] = 10.0
-                    else:
-                        model.actuator_forcerange[aid, 0] = -10.0
-                        model.actuator_forcerange[aid, 1] = 10.0
+                    # Shadow Hand needs stronger position gains to achieve visible curl.
+                    # Position actuator: force = kp * (ctrl - qpos) - kd * qvel
+                    model.actuator_gainprm[aid, 0] = shadow_finger_kp
+                    model.actuator_biasprm[aid, 1] = -shadow_finger_kp
+                    model.actuator_biasprm[aid, 2] = -shadow_finger_kd
+                    model.actuator_forcerange[aid] = np.array(
+                        [-shadow_finger_force, shadow_finger_force], dtype=float
+                    )
                     if act_ctrl_limited[aid]:
                         lo, hi = act_ctrl_ranges[aid]
                         data.ctrl[aid] = float(np.clip(data.ctrl[aid], lo, hi))
@@ -945,41 +1052,40 @@ def run_sim(json_file):
                     for act_id in acts:
                         home = actuator_home_ctrl[act_id]
                         target = home
-                        if act_ctrl_limited[act_id]:
-                            lo, hi = act_ctrl_ranges[act_id]
-                            mode = finger_mode_map.get(f_idx, ContactMode.HOVER)
-                            if use_shadow:
-                                # Freeze non-active fingers to avoid jitter/explosions.
-                                if primary_sm is not None and f_idx != primary_sm.finger_idx:
-                                    target = home
-                                elif act_trn_type[act_id] == mujoco.mjtTrn.mjTRN_TENDON:
-                                    if mode == ContactMode.STRIKE:
-                                        target = home + 0.7 * (hi - home)
-                                    elif mode in (ContactMode.PRETOUCH, ContactMode.HOLD):
-                                        target = home + 0.5 * (hi - home)
-                                    else:
-                                        target = home + 0.1 * (hi - home)
-                                else:
-                                    if mode == ContactMode.STRIKE:
-                                        target = home + 0.7 * (hi - home)
-                                    elif mode in (ContactMode.PRETOUCH, ContactMode.HOLD):
-                                        target = home + 0.5 * (hi - home)
-                                    else:
-                                        target = home + 0.1 * (hi - home)
+                    mode = finger_mode_map.get(f_idx, ContactMode.HOVER)
+                    if use_shadow:
+                        # Use data-driven curl direction; skip joints that don't move the tip down.
+                        direction, _ = shadow_act_curl.get(act_id, (0, 0.0))
+                        if direction == 0:
+                            target = home
+                        else:
+                            if direction > 0:
+                                span = act_ctrl_ranges[act_id][1] - home
                             else:
-                                if smooth_finger_targets[f_idx] >= 1.0:
-                                    target = hi
-                                else:
-                                    target = home + smooth_finger_targets[f_idx] * FINGER_FLEX_RANGE * (hi - home)
-                            target = np.clip(target, lo, hi)
-                        # Rate limit finger actuator targets to reduce jitter.
+                                span = home - act_ctrl_ranges[act_id][0]
+                            if smooth_finger_targets[f_idx] >= 1.0:
+                                target = home + direction * span
+                            else:
+                                target = home + direction * smooth_finger_targets[f_idx] * FINGER_FLEX_RANGE * span
+                    else:
+                        if smooth_finger_targets[f_idx] >= 1.0:
+                            target = act_ctrl_ranges[act_id][1]
+                        else:
+                            target = home + smooth_finger_targets[f_idx] * FINGER_FLEX_RANGE * (act_ctrl_ranges[act_id][1] - home)
+                    if act_ctrl_limited[act_id]:
+                        lo, hi = act_ctrl_ranges[act_id]
+                        target = np.clip(target, lo, hi)
+                        # Rate limit finger movements for stability
                         prev = prev_finger_ctrl.get(act_id, target)
-                        max_delta = 0.015
-                        if use_shadow and act_trn_type[act_id] == mujoco.mjtTrn.mjTRN_TENDON:
-                            max_delta = 0.1
+                        if mode == ContactMode.STRIKE:
+                            max_delta = 0.12  # Fast for striking keys
+                        elif mode in (ContactMode.PRETOUCH, ContactMode.HOLD):
+                            max_delta = 0.06
+                        else:
+                            max_delta = 0.02  # Slow for idle fingers
                         target = float(np.clip(target, prev - max_delta, prev + max_delta))
                         prev_finger_ctrl[act_id] = target
-                        data.ctrl[act_id] = float(target)
+                        data.ctrl[act_id] = target
                         if debug_fingers and sim_t >= debug_next_t and f_idx in (2, 3):
                             name = mujoco.mj_id2name(model, mujoco.mjtObj.mjOBJ_ACTUATOR, act_id)
                             qpos_val = None
