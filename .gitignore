@@ -12,3 +12,9 @@ README.mdthird_party/mujoco_menagerie/
 third_party/mujoco_menagerie/
 README
 third_party/mujoco_menagerie/
+
+# local-only
+README.md
+data/processed/
+sim_debug.txt
+sim_output*.txt
